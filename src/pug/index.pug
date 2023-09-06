@@ -5,6 +5,281 @@ block variables
 
 block content
 
-	// BEGIN BLOCK
+	// BEGIN HEADER
 
-	// END BLOCK
+	header.header
+		.header__container.containter 
+			.logo 
+			.navigation-list 
+				li.navigation-list__item 
+					a.navigation-list__link(href="" title="") Услуги
+					a.navigation-list__link(href="" title="") Направления
+					a.navigation-list__link(href="" title="") Проекты
+					a.navigation-list__link(href="" title="") Клиенты
+					a.navigation-list__link(href="" title="") Контакты
+						
+			.button Обсудить проект
+
+	// END HEADER
+
+	// BEGIN MAIN SCREEN
+
+	section#main-screen.main-screen 
+		.main-screen__container.container 
+			.main-screen__item
+				.main-screen__description
+					h2 WEB-разработка с фокусом на портальные решения  
+
+				img.main-screen__preview(src="" alt="@@")
+
+	// END MAIN SCREEN
+
+	// BEGIN SERVICES
+
+	section#services.services 
+		.services__container.container
+			h2.services__title.title Услуги
+			.services__list 
+				.services__item
+					h3.services__title Разработка
+					p.services__text Технический аудит
+					p.services__text MVP прототип
+					p.services__text Проект под ключ
+					p.services__text Поддержка и развитие
+					//+icon('name')
+
+				.services__item
+					h3.services__title Аутстаф
+					p.services__text 
+						| Сертифицированные #[br] разработчики
+					p.services__text 
+						| Выделенная команда #[br] под проект
+					//+icon('name')
+
+				.services__item
+					h3.services__title Типовые решения
+					p.services__text Корпоративный портал
+					p.services__text Личный кабинет (b2b, b2c)
+					p.services__text CRM-система
+					p.services__text Интеграции
+					//+icon('name')
+
+				.services__item
+					h3.services__title Аналитика
+					p.services__text Спецификация
+					p.services__text ПМИ
+					p.services__text ТЗ по ГОСТ
+					p.services__text UX-аудит
+					//+icon('name')
+
+				.services__item
+					h3.services__title Devops
+					p.services__text Подбор серверов 
+					p.services__text Сайзинг
+					p.services__text Инфраструктура
+					p.services__text CI/CD
+					//+icon('name')
+
+				.services__item
+					h3.services__title Дизайн
+					p.services__text Исследование 
+					p.services__text UX-тестирование
+					p.services__text Дизайн концепция
+					p.services__text Адаптивный дизайн
+					//+icon('name')
+
+	// END SERVICES
+
+	// BEGIN DIRECTIONS
+
+	section#directions.directions 
+		.directions__container.container
+			h2.directions__title.title Направления
+			.directions__list 
+				a.directions__item(href="" title="" target="_blank")
+					img.directions__icon(src="" alt="@@")
+					p.directions__text Госсектор
+
+				a.directions__item(href="" title="" target="_blank")
+					img.directions__icon(src="" alt="@@")
+					p.directions__text Газ, нефть
+
+				a.directions__item(href="" title="" target="_blank")
+					img.directions__icon(src="" alt="@@")
+					p.directions__text Агросектор
+
+				a.directions__item(href="" title="" target="_blank")
+					img.directions__icon(src="" alt="@@")
+					p.directions__text Ритейл
+
+				a.directions__item(href="" title="" target="_blank")
+					img.directions__icon(src="" alt="@@")
+					p.directions__text Транспорт
+
+				a.directions__item(href="" title="" target="_blank")
+					img.directions__icon(src="" alt="@@")
+					p.directions__text Энергетика
+
+	// END DIRECTIONS
+
+	// BEGIN PROJECTS
+
+	section#projects.projects 
+		.projects__container.container
+			h2.projects__title.title Проекты
+
+			.projects__controls.controls 
+				.controls__prev
+					// icon('name')
+				.controls__prev
+					// icon('name')
+
+			.projects__list
+				.projects__previews 
+					.projects__item 
+						.projects__title Личный кабинет (b2b)
+						.projects__content
+								.projects__client Задачи проекта
+								img.projects__interface(src="" alt="@@")
+
+				.projects__preivew 
+					.projects__item 
+						.projects__title Корпоративный портал проектных офисов
+						.projects__content 
+							.projects__column 
+								.projects__subtitle Задачи проекта
+								.projects__text 
+									| Разработать систему, помогающую информировать пользователей о статусе работы проектных офисов, новостях и лучших практиках
+
+								.projects__subtitle Результаты
+								ul.projects__box
+									li.projects__point
+										| Реализованная единая ИС для госслужащих из разных минестерств и ведомств
+									li.projects__point
+										| Геймифицированное проектное управление								
+
+								.projects__subtitle Технология
+								.projects__text 
+									| 1С-Битрикс24: Корпоративный портал
+
+							img.projects__interface(src="" alt="@@")
+
+						img.projects__client(src="" alt="@@")
+
+	// END PROJECTS
+
+	// BEGIN ACHIEVEMENTS
+
+	sections#achievements.achievements
+		.achievements__container.container 
+			.achievements__title.title Достижения и награды
+				.achievements__list 
+					a.achievements__item(href="#" title="" target="_blank")
+						.achievements__date 2023
+						img.achievements__image(src="" alt="@@")
+
+					a.achievements__item(href="#" title="" target="_blank")
+						.achievements__date 2022
+						img.achievements__image(src="" alt="@@")
+
+					a.achievements__item(href="#" title="" target="_blank")
+						.achievements__date 2020
+						img.achievements__image(src="" alt="@@")
+
+					.achievements__item.achievements__item_text 
+						| ZOOM IBS в #[span ТОП-3] в номинациях: «Интранет-лидер года» и «Интранет-команда года» экспертной премии #[span Russian Intranet Awards]
+
+	// END ACHIEVEMENTS
+
+	// BEGIN DEVELOPERS
+
+	section.developers 
+		.developers__containter.container 
+			.developers__title 
+				| Хотите нанять опытных разработчиков?
+
+			.developers__text 
+				| Мы понимаем бизнес-задачи наших клиентов и решаем все вопросы по разработке
+
+			.developers__button.button Нанять разработчиков
+
+	// END DEVELOPERS
+
+	// BEGIN CLIENTS
+
+	section#clients.clients 
+		.clients__container.container 
+			.clients__title.title Достижения и награды	
+
+			.clients__list 
+				.clients__item
+					img.clients__logo(src="" alt="@@")
+				.clients__item
+					img.clients__logo(src="" alt="@@")
+				.clients__item
+					img.clients__logo(src="" alt="@@")
+				.clients__item
+					img.clients__logo(src="" alt="@@")
+				.clients__item
+					img.clients__logo(src="" alt="@@")
+				.clients__item
+					img.clients__logo(src="" alt="@@")
+
+	// END CLIENTS
+
+	// BEGIN FOOTER
+
+	footer.footer 
+		.footer__container.container 
+			.footer__top 
+				.footer__column 
+					a.footer__logo.logo(href="" title="")
+						// icon('name') 
+					a.footer__phone(href="tel:0000000000" title="") +7 (495) 967-80-80
+					a.footer__phone(href="tel:0000000000" title="") +7 (914) 195-64-59
+
+					address.footer__address 
+						| Россия, 127434, город Москва, Дмитровское шоссе, дом 9-Б, эт. 5 пом. XIII, ком. 6
+
+				.footer__column 
+					ul.footer__navigation.navigation
+						li.footer__item 
+							a.footer__link(href="#" title="") Услуги 
+						li.footer__item 
+							a.footer__link(href="#" title="") Достижения 
+						li.footer__item 
+							a.footer__link(href="#" title="") Направления 
+						li.footer__item 
+							a.footer__link(href="#" title="") Клиенты
+						li.footer__item 
+							a.footer__link(href="#" title="") Проекты 
+						li.footer__item 
+							a.footer__link(href="#" title="") Контакты
+
+					a.footer__link(href="#" title="") Скачать презентацию 
+
+				.footer__column
+					.footer__button.button Обсудить проект
+					.footer__text 
+						| Электронная почта:
+						a.footer__link(href="mailto:web@ibs.ru" title="") web@ibs.ru
+
+			.footer__bottom 
+				p.footer__copyright
+					| © ООО «ИБС Экспертиза», 2023. Все права защищены
+
+				a.footer__link(href="#" title="")
+					| Персональные данные и правовые аспекты
+
+				ul.footer__socials 
+					li.footer__item 
+						a.footer__link(href="#" target="_blank" title="vk")
+							// icon('name')
+					li.footer__item 
+						a.footer__link(href="#" target="_blank" title="in")
+							// icon('name')
+					li.footer__item 
+						a.footer__link(href="#" target="_blank" title="ibs.ru")
+							// icon('name')
+
+	// END FOOTER
