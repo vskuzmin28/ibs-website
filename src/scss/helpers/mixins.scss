@@ -1,0 +1,42 @@
+@import "vars";
+
+@mixin list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin transition {
+  transition: $transition-base;
+}
+
+@mixin bgs-cover {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@mixin desktop {
+  @media (max-width: ($desktop)) {
+		@content;
+	}
+}
+
+
+@mixin large {
+  @media (max-width: ($large)) {
+		@content;
+	}
+}
+
+@mixin tablet {
+  @media (max-width: ($tablet)) {
+		@content;
+	}
+}
+
+@mixin mobile {
+  @media (max-width: ($mobile)) {
+		@content;
+	}
+}
