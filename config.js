@@ -1,3 +1,3 @@
-const website = 'vicecode.ru'
+const website = 'web-ibs.surge.sh'
 
 module.exports = {website}

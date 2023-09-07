@@ -4,9 +4,10 @@
 @import "helpers/sprite";
 
 html {
-	font-family: 'Tahoma', Arial, serif;
+	font-family: 'SegoeUI-Regular', Tahoma;
 	font-size: 16px;
 	height: 100%;
+	background: var(linear-gradient(134deg, #FFF 29.52%, #C7D5E0 118.05%));
 }
 
 body {
@@ -25,7 +26,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 	margin: 0;
 	padding: 0;
 	font-weight: normal;
-	color: $color-white;
+	color: $color-black;
 }
 
 ol, ul {
@@ -76,5 +77,20 @@ input[type=number] {
 .is-visible {
 	visibility: visible;
 	opacity: 1;
+}
+
+// container
+
+.container {
+	margin: 0 auto;
+
+	@include large {
+		width: 1500px;
+	}
+
+	@include desktop {
+		width: 100%;
+	}
+
 }
 

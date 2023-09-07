@@ -10,4 +10,14 @@
   }
 }
 
-// @include font-face('Montserrat-Regular', '../fonts/montserrat/Montserrat-Regular', 400, 'normal');
+// Inter
+
+@include font-face('Inter-Regular', '../fonts/Inter/Inter-Regular', 400, 'normal');
+@include font-face('Inter-SemiBold', '../fonts/Inter/Inter-SemiBold', 500, 'normal');
+@include font-face('Inter-Bold', '../fonts/Inter/Inter-Bold', 600, 'normal');
+
+// Segoe UI
+
+@include font-face('SegoeUI-Regular', '../fonts/SegoeUI/SegoeUI-Regular', 400, 'normal');
+@include font-face('SegoeUI-SemiBold', '../fonts/SegoeUI/SegoeUI-SemiBold', 500, 'normal');
+@include font-face('SegoeUI-Bold', '../fonts/SegoeUI/SegoeUI-Bold', 600, 'normal');

@@ -16,14 +16,13 @@
   background-position: center;
 }
 
-@mixin desktop {
-  @media (max-width: ($desktop)) {
+@mixin large {
+  @media (min-width: ($large)) {
 		@content;
 	}
 }
 
-
-@mixin large {
+@mixin desktop {
   @media (max-width: ($large)) {
 		@content;
 	}

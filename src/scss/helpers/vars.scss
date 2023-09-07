@@ -1,10 +1,13 @@
 // Colors
 $color-white: #fff;
-$color-black: #000;
+$color-black: #3d3d3d;
+$color-blue-dark: #213B87;
+$color-blue: #006EE9;
+$color-blue-light: #008DFF;
 
-// Sizes
+// Breakpoints
 $tablet: 992px;
-$large: 1200px;
+$large: 1500px;
 $desktop: 1200px;
 $mobile: 576px;
 
@@ -12,4 +15,13 @@ $mobile: 576px;
 $transition-base: all 0.25s ease-out;
 
 // Fonts
-$roboto: 'roboto';
+
+// Poppins
+$poppins-400: 'SegoeUI-Regular';
+$poppins-500: 'SegoeUI-SemiBold';
+$poppins-600: 'SegoeUI-Bold';
+
+// Inter
+$inter-400: 'Inter-Regular';
+$inter-500: 'Inter-SemiBold';
+$inter-600: 'Inter-Bold';
