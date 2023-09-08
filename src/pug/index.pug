@@ -9,17 +9,21 @@ block content
 
 	header.header
 		.header__container.container 
-			a.navigation__logo.logo(href="#" title="")
-				img.logo__image(src="/assets/images/ibs-blue.png" alt="ibs.ru")
-			.navigation-list 
-				li.navigation-list__item 
-					a.navigation-list__link(href="" title="") Item
-					a.navigation-list__link(href="" title="") Направления
-					a.navigation-list__link(href="" title="") Проекты
-					a.navigation-list__link(href="" title="") Клиенты
-					a.navigation-list__link(href="" title="") Контакты
+			a.header__logo.logo(href="#" title="")
+				img.logo__image(src="/assets/images/logo-blue.png" alt="ibs.ru")
+			.header__navigation.navigation
+				li.navigation__item 
+					a.navigation__link(href="#services" title="") Услуги
+				li.navigation__item 
+					a.navigation__link(href="#directions" title="") Направления
+				li.navigation__item 
+					a.navigation__link(href="#projects" title="") Проекты
+				li.navigation__item 
+					a.navigation__link(href="#clients" title="") Клиенты
+				li.navigation__item 
+					a.navigation__link(href="#dfdf" title="") Контакты
 						
-			.button Обсудить проект
+			.header__button.button Обсудить проект
 
 	// END HEADER
 
