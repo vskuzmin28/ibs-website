@@ -4,7 +4,7 @@ const svgmin = require('gulp-svgmin');
 const cheerio = require('gulp-cheerio');
 const replace = require('gulp-replace');
 
-// Делаем SVG спрайт
+// generate SVG spirte
 
 module.exports = function spriteSVG() {
   return gulp.src('src/images/sprite/svg/*.svg')
@@ -15,9 +15,9 @@ module.exports = function spriteSVG() {
     }))
     .pipe(cheerio({
       run: function ($) {
-        $('[fill]').removeAttr('fill');
-        $('[stroke]').removeAttr('stroke');
-        $('[style]').removeAttr('style');
+        //$('[fill]').removeAttr('fill');
+        //$('[stroke]').removeAttr('stroke');
+        //$('[style]').removeAttr('style');
       },
       parserOptions: {xmlMode: true}
     }))

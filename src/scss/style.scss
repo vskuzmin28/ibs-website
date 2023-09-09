@@ -140,6 +140,7 @@ input[type=number] {
 .header {
 
 	&__container {
+		margin-top: 20px;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
@@ -169,6 +170,76 @@ input[type=number] {
 			color: $color-white;
 			border: 1px solid $color-blue;
 			background: $color-blue-light;
+		}
+	}
+}
+
+// services
+
+.services {
+	&__container {
+		margin-top: 30px;
+		padding-top: 30px;
+	}
+
+	&__title {
+		margin-bottom: 60px;
+		color: $color-blue-dark;
+		font-family: $inter-600;
+		font-size: 36px;
+		cursor: default;
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		position: relative;
+		padding: 40px;
+		display: flex;
+		flex-direction: column;
+		width: 480px;
+		background: $color-white;
+		box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.04);
+
+		&:nth-child(n+4) {
+			margin-top: 30px;
+		}
+
+		.services__title {
+			margin-bottom: 40px;
+			color: #006EE9;
+			font-family: $inter-500;
+			font-size: 20px;
+		}
+
+		.services__text {
+			margin-bottom: 10px;
+			font-family: $poppins-400;
+			font-size: 16px;
+			color: $color-black;
+			cursor: default;
+
+			&_long {
+				margin-bottom: 20px;
+				line-height: 180%;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		svg {
+			bottom: 40px;
+			right: 40px;
+			position: absolute;
+			width: 80px;
+			height: 80px;
 		}
 	}
 }
