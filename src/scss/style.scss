@@ -313,6 +313,51 @@ input[type=number] {
 	}
 }
 
+// developers
+
+.developers {
+	margin-top: 60px;
+	background: $color-blue-dark;
+
+	&__container {
+		padding: 30px 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		color: $color-white;
+	}
+
+	&__title {
+		font-size: 36px;
+		font-family: $inter-600;
+	}
+
+	&__text {
+		margin-top: 16px;
+		font-size: 24px;
+		font-family: $poppins-400;
+	}
+
+	&__button {
+		margin: 36px auto 0 auto;
+		width: 270px;
+		height: 60px;
+		background: $color-white;
+		border: 1px solid $color-blue-light;
+		font-size: 18px;
+		font-family: $inter-600;
+		color: $color-blue-light;
+		transition: $transition-base;
+
+		&:hover {
+			background: $color-blue-light;
+			border: 1px solid $color-blue-light;
+			color: $color-white;
+		}
+	}
+}
+
 // clients
 
 .clients {
@@ -502,6 +547,7 @@ input[type=number] {
 		padding-bottom: 36px;
 		display: flex;
 		flex-direction: row;
+		align-items: center;
 		justify-content: space-between;
 
 		#{$p}__copyright {
@@ -516,6 +562,7 @@ input[type=number] {
 		}
 
 		#{$p}__socials {
+			margin-top: -10px;
 			display: flex;
 			flex-direction: row;
 			height: 24px;
