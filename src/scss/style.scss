@@ -7,7 +7,6 @@ html {
 	font-family: 'SegoeUI-Regular', Tahoma;
 	font-size: 16px;
 	height: 100%;
-	background: var(linear-gradient(134deg, #FFF 29.52%, #C7D5E0 118.05%));
 }
 
 body {
@@ -16,6 +15,7 @@ body {
 	text-rendering: optimizeSpeed;
 	line-height: 1.5;
 	overflow-x: hidden;
+	background: var(--ibs, linear-gradient(134deg, #FFF 29.52%, #C7D5E0 118.05%) fixed);
 }
 
 *,
@@ -135,6 +135,15 @@ input[type=number] {
 	transition: $transition-base;
 }
 
+// title 
+
+.title {
+	color: $color-blue-dark;
+	font-family: $inter-600;
+	font-size: 36px;
+	cursor: default;
+}
+
 // header
 
 .header {
@@ -177,6 +186,8 @@ input[type=number] {
 // services
 
 .services {
+	$p: &;
+
 	&__container {
 		margin-top: 30px;
 		padding-top: 30px;
@@ -184,10 +195,6 @@ input[type=number] {
 
 	&__title {
 		margin-bottom: 60px;
-		color: $color-blue-dark;
-		font-family: $inter-600;
-		font-size: 36px;
-		cursor: default;
 	}
 
 	&__list {
@@ -210,14 +217,14 @@ input[type=number] {
 			margin-top: 30px;
 		}
 
-		.services__title {
+		#{$p}__title {
 			margin-bottom: 40px;
 			color: #006EE9;
 			font-family: $inter-500;
 			font-size: 20px;
 		}
 
-		.services__text {
+		#{$p}__text {
 			margin-bottom: 10px;
 			font-family: $poppins-400;
 			font-size: 16px;
@@ -241,5 +248,66 @@ input[type=number] {
 			width: 80px;
 			height: 80px;
 		}
+	}
+}
+
+// directions
+
+.directions {
+	$p: &;
+
+	&__container {
+		margin-top: 30px;
+		padding-top: 30px;
+	}
+
+	&__title {
+		margin-bottom: 60px;
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 220px;
+		height: 220px;
+		background: $color-white;
+		filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.04));
+		border-radius: 120%;
+		text-decoration: none;
+		transition: $transition-base;
+
+		&:hover {
+			background: $color-blue;
+			filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.04));
+
+			#{$p}__icon {
+				filter: brightness(0) invert(1);
+			}
+
+			#{$p}__text {
+				color: $color-white;
+			}
+		}
+	}
+
+	&__icon {
+		margin-bottom: 20px;
+		width: 80px;
+		height: 80px;
+	}
+
+	&__text {
+		font-family: $poppins-500;
+		font-size: 16px;
+		color: $color-black;
+		cursor: default;
 	}
 }
