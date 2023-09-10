@@ -1,7 +1,7 @@
 extends layout/main
 
 block variables
-	-var title = 'Title'
+	-var title = 'IBS - web-разработка'
 
 block content
 
@@ -16,6 +16,8 @@ block content
 					a.navigation__link(href="#services" title="") Услуги
 				li.navigation__item 
 					a.navigation__link(href="#directions" title="") Направления
+				//- li.navigation__item 
+				//- 	a.navigation__link(href="#bitrix24" title="") Битрикс24
 				li.navigation__item 
 					a.navigation__link(href="#projects" title="") Проекты
 				li.navigation__item 
@@ -39,7 +41,7 @@ block content
 							| #[strong WEB-разработка] с фокусом на портальные решения #[br] #[span 1С-Битрикс] 
 
 						.main-screen__tags 
-							.main-screen__item.main-screen__item_active Корпоративные порталы
+							.main-screen__item Корпоративные порталы
 							.main-screen__item Личные кабинеты (b2b, b2c)
 							.main-screen__item CRM-системы
 
@@ -137,47 +139,53 @@ block content
 
 	// BEGIN PROJECTS
 
-	//- section#projects.projects 
-	//- 	.projects__container.container
-	//- 		h2.projects__title.title Проекты
+	section#projects.projects 
+		.projects__container.container
+			.projects__field
+				h2.projects__title.title Проекты
 
-	//- 		.projects__controls.controls 
-	//- 			.controls__prev
-	//- 				// icon('name')
-	//- 			.controls__prev
-	//- 				// icon('name')
+				.projects__controls.controls 
+					.controls__prev
+						+icon('arrow')
+					.controls__next
+						+icon('arrow')
 
-	//- 		.projects__list
-	//- 			.projects__previews 
-	//- 				.projects__item 
-	//- 					.projects__title Личный кабинет (b2b)
-	//- 					.projects__content
-	//- 							.projects__client Задачи проекта
-	//- 							img.projects__interface(src="" alt="@@")
+			.projects__box
+				.projects__column 
+					.projects__description 
+						p.projects__text 
+							| В нашем портфолио #[span 30+] успешно завершенных проектов, в том числе для ПИК, УралКалий, Газпромбанк, Газпром-Нефть, Газпром и др.
+						p.projects__text 
+							| В дивизионе разработки компании #[span IBS] более #[span 1000] высококвалифицированных специалистов, с отлаженной коммуникацией и выстроенной структурой управления
 
-	//- 			.projects__preivew 
-	//- 				.projects__item 
-	//- 					.projects__title Корпоративный портал проектных офисов
-	//- 					.projects__content 
-	//- 						.projects__column 
-	//- 							.projects__subtitle Задачи проекта
-	//- 							.projects__text 
-	//- 								| Разработать систему, помогающую информировать пользователей о статусе работы проектных офисов, новостях и лучших практиках
+					.projects__certificates
+						img.projects__certificate(src="/assets/images/certificates/certificate-1.png" alt="ibs.ru")
+						img.projects__certificate(src="/assets/images/certificates/certificate-2.png" alt="ibs.ru")
+						img.projects__certificate(src="/assets/images/certificates/certificate-3.png" alt="ibs.ru")
+						img.projects__certificate(src="/assets/images/certificates/certificate-4.png" alt="ibs.ru")
 
-	//- 							.projects__subtitle Результаты
-	//- 							ul.projects__box
-	//- 								li.projects__point
-	//- 									| Реализованная единая ИС для госслужащих из разных минестерств и ведомств
-	//- 								li.projects__point
-	//- 									| Геймифицированное проектное управление								
+				.projects__list
+					.projects__item 
+						.projects__title Корпоративный портал проектных офисов
+						.projects__content 
+							.projects__column 
+								.projects__subtitle Задачи проекта
+								.projects__text 
+									| Разработать систему, помогающую информировать пользователей о статусе работы проектных офисов, новостях и лучших практиках
 
-	//- 							.projects__subtitle Технология
-	//- 							.projects__text 
-	//- 								| 1С-Битрикс24: Корпоративный портал
+								.projects__subtitle Результаты
+								ul.projects__box
+									li.projects__point
+										| Реализованная единая ИС для госслужащих из разных минестерств и ведомств
+									li.projects__point
+										| Геймифицированное проектное управление								
 
-	//- 						img.projects__interface(src="" alt="@@")
-
-	//- 					img.projects__client(src="" alt="@@")
+								.projects__subtitle Технология
+								.projects__text 
+									| 1С-Битрикс24: Корпоративный портал
+							.projects__images
+								img.projects__interface(src="/assets/images/projects/rfk.png" alt="ibs.ru")
+								img.projects__client(src="/assets/images/clients/rfk.png" alt="ibs.ru")
 
 	// END PROJECTS
 
@@ -263,6 +271,8 @@ block content
 							a.footer__link(href="#achievements" title="") Достижения 
 						li.footer__item 
 							a.footer__link(href="#directions" title="") Направления 
+						//- li.footer__item 
+						//- 	a.footer__link(href="#bitrix24" title="") Битрикс24 
 						li.footer__item 
 							a.footer__link(href="#clients" title="") Клиенты
 						li.footer__item 
