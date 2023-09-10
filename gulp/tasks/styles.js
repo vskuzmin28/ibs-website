@@ -3,7 +3,7 @@ const plumber = require('gulp-plumber');
 const sass = require('gulp-sass')(require('sass'));
 const autoprefixer = require('gulp-autoprefixer');
 
-// Работаем со стилями
+// generate styles
 
 module.exports = function styles() {
   return gulp.src('src/scss/style.scss')
