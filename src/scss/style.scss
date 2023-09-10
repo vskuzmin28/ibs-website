@@ -3,6 +3,8 @@
 @import "helpers/fonts";
 @import "helpers/sprite";
 
+@import "./../pug/components/header/header.scss";
+
 html {
 	font-family: 'SegoeUI-Regular', Tahoma;
 	font-size: 16px;
@@ -185,70 +187,6 @@ input[type=number] {
 			margin-right: 4px;
 			transform: rotate(180deg);
 		}
-	}
-}
-
-// header
-
-.header {
-	$p: &;
-
-	&__container {
-		margin-top: 20px;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: center;
-		height: 82px;
-	}
-
-	&__logo {
-		display: inline-block;
-		width: 60px;
-		height: 60px;
-
-		&:hover {
-			opacity: 0.75;
-			transition: $transition-base;
-		}
-
-		#{$p}__image {
-			width: 60px;
-			height: 60px;
-		}
-	}
-
-	&__button {
-		width: 180px;
-		height: 40px;
-		border: 1px solid $color-blue;
-		background: $color-white;
-		color: $color-blue;
-
-		&:hover {
-			color: $color-white;
-			border: 1px solid $color-blue;
-			background: $color-blue-light;
-		}
-	}
-
-	&--float {
-		top: 0;
-		position: fixed;
-		width: 100%;
-		height: 82px;
-		background: $color-blue-dark;
-		z-index: 30;
-		transition: $transition-base;
-
-		#{$p}__container {
-			margin-top: 0;
-		}
-
-		.navigation__link {
-			color: $color-white;
-		}
-
 	}
 }
 

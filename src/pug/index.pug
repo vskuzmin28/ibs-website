@@ -1,31 +1,26 @@
-extends layout/main
+extends ../pug/layout/main
 
 block variables
-	-var title = 'IBS - web-разработка'
+	-let title = 'IBS - web-разработка'
+	-let description = ''
+	-let keywords = ''
 
 block content
 
 	// BEGIN HEADER
 
-	header.header
-		.header__container.container 
-			a.header__logo.logo(href="#" title="")
-				img.logo__image(src="/assets/images/logo-blue.png" alt="ibs.ru")
-			.header__navigation.navigation
-				li.navigation__item 
-					a.navigation__link(href="#services" title="") Услуги
-				li.navigation__item 
-					a.navigation__link(href="#directions" title="") Направления
-				//- li.navigation__item 
-				//- 	a.navigation__link(href="#bitrix24" title="") Битрикс24
-				li.navigation__item 
-					a.navigation__link(href="#projects" title="") Проекты
-				li.navigation__item 
-					a.navigation__link(href="#clients" title="") Клиенты
-				li.navigation__item 
-					a.navigation__link(href="#dfdf" title="") Контакты
-						
-			.header__button.button Обсудить проект
+	+header({
+		logo: '/assets/images/logo-blue.png',
+		alt: 'ibs.ru',
+		items: [
+			{link: '#services', title: 'Услуги'},
+			{link: '#directions', title: 'Направления'},
+			{link: '#projects', title: 'Проекты'},
+			{link: '#clients', title: 'Клиенты'},
+			{link: '#contacts', title: 'Контакты'},
+    	],
+		button: 'Обсудить проект'
+	})
 
 	// END HEADER
 
@@ -271,8 +266,6 @@ block content
 							a.footer__link(href="#achievements" title="") Достижения 
 						li.footer__item 
 							a.footer__link(href="#directions" title="") Направления 
-						//- li.footer__item 
-						//- 	a.footer__link(href="#bitrix24" title="") Битрикс24 
 						li.footer__item 
 							a.footer__link(href="#clients" title="") Клиенты
 						li.footer__item 

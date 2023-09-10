@@ -1,10 +1,10 @@
 $(document).ready(() => {
     svg4everybody()
 
-    $('.header, footer, .main__tags').on("click","a", function (event) {
+    $('.header, footer').on("click","a", function (event) {
         event.preventDefault();
         let id  = $(this).attr('href'),
-            top = $(id).offset().top - 100;
+            top = $(id).offset().top - 150;
         $('body,html').animate({scrollTop: top}, 1500)
     })
 })

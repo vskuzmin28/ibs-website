@@ -1,0 +1,68 @@
+@import "helpers/vars";
+@import "helpers/mixins";
+@import "helpers/fonts";
+@import "helpers/sprite";
+
+// header
+
+.header {
+	$p: &;
+
+	&__container {
+		padding-top: 20px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		height: 82px;
+	}
+
+	&__logo {
+		display: inline-block;
+		width: 60px;
+		height: 60px;
+
+		&:hover {
+			opacity: 0.75;
+			transition: $transition-base;
+		}
+
+		#{$p}__image {
+			width: 60px;
+			height: 60px;
+		}
+	}
+
+	&__button {
+		width: 180px;
+		height: 40px;
+		border: 1px solid $color-blue;
+		background: $color-white;
+		color: $color-blue;
+
+		&:hover {
+			color: $color-white;
+			border: 1px solid $color-blue;
+			background: $color-blue-light;
+		}
+	}
+
+	&--float {
+		top: 0;
+		position: fixed;
+		width: 100%;
+		height: 82px;
+		background: $color-blue-dark;
+		z-index: 30;
+		transition: $transition-base;
+
+		#{$p}__container {
+			padding-top: 0;
+		}
+
+		.navigation__link {
+			color: $color-white;
+		}
+
+	}
+}
