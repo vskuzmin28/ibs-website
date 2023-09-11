@@ -274,6 +274,8 @@ input[type=number] {
 .services {
 	$p: &;
 
+	margin-bottom: 30px;
+
 	&__container {
 		margin-top: 30px;
 		padding-top: 30px;
@@ -342,6 +344,8 @@ input[type=number] {
 
 .projects {
 	$p: &;
+
+	margin-bottom: 30px;
 
 	&__container {
 		margin-top: 30px;
