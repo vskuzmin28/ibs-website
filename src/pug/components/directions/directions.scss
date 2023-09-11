@@ -1,11 +1,6 @@
-@import "helpers/vars";
-@import "helpers/mixins";
-@import "helpers/fonts";
-@import "helpers/sprite";
+// directions
 
-// clients
-
-.clients {
+.directions {
 	$p: &;
 
 	&__container {
@@ -33,18 +28,33 @@
 		background: $color-white;
 		filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.04));
 		border-radius: 120%;
+		text-decoration: none;
+		transition: $transition-base;
 
-		#{$p}__logo {
-			height: 90px;
+		&:hover {
+			background: $color-blue;
+			filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.04));
 
-			&_top {
-				margin-top: -10px;
+			#{$p}__icon {
+				filter: brightness(0) invert(1);
 			}
 
-			&_omk {
-				height: 50px;
+			#{$p}__text {
+				color: $color-white;
 			}
 		}
 	}
 
+	&__icon {
+		margin-bottom: 20px;
+		width: 80px;
+		height: 80px;
+	}
+
+	&__text {
+		font-family: $poppins-500;
+		font-size: 16px;
+		color: $color-black;
+		cursor: default;
+	}
 }

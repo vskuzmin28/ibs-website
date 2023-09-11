@@ -1,0 +1,11 @@
+mixin directions(data)
+	- data = data || {};
+
+	section#directions.directions 
+		.directions__container.container
+			h2.directions__title.title!=data.title
+			.directions__list 
+				each directions in data.items
+					a.directions__item(href = directions.link title="" target="_blank")
+						img.directions__icon(src = directions.logo alt = directions.alt)
+						p.directions__text!=directions.title

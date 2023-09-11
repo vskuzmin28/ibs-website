@@ -4,6 +4,7 @@
 @import "helpers/sprite";
 
 @import "./../pug/components/header/header.scss";
+@import "./../pug/components/directions/directions.scss";
 @import "./../pug/components/clients/clients.scss";
 
 html {
@@ -482,67 +483,6 @@ input[type=number] {
 	}
 }
 
-// directions
-
-.directions {
-	$p: &;
-
-	&__container {
-		margin-top: 30px;
-		padding-top: 30px;
-	}
-
-	&__title {
-		margin-bottom: 60px;
-	}
-
-	&__list {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-	}
-
-	&__item {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		width: 220px;
-		height: 220px;
-		background: $color-white;
-		filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.04));
-		border-radius: 120%;
-		text-decoration: none;
-		transition: $transition-base;
-
-		&:hover {
-			background: $color-blue;
-			filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.04));
-
-			#{$p}__icon {
-				filter: brightness(0) invert(1);
-			}
-
-			#{$p}__text {
-				color: $color-white;
-			}
-		}
-	}
-
-	&__icon {
-		margin-bottom: 20px;
-		width: 80px;
-		height: 80px;
-	}
-
-	&__text {
-		font-family: $poppins-500;
-		font-size: 16px;
-		color: $color-black;
-		cursor: default;
-	}
-}
-
 // achievements
 
 .achievements {
@@ -683,52 +623,6 @@ input[type=number] {
 			color: $color-white;
 		}
 	}
-}
-
-// clients
-
-.clients {
-	$p: &;
-
-	&__container {
-		margin-top: 30px;
-		padding-top: 30px;
-	}
-
-	&__title {
-		margin-bottom: 60px;
-	}
-
-	&__list {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-	}
-
-	&__item {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		width: 220px;
-		height: 220px;
-		background: $color-white;
-		filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.04));
-		border-radius: 120%;
-
-		#{$p}__logo {
-			height: 90px;
-
-			&_top {
-				margin-top: -10px;
-			}
-
-			&_omk {
-				height: 50px;
-			}
-		}
-	}
-
 }
 
 // footer
