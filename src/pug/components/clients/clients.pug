@@ -1,0 +1,10 @@
+mixin clients(data)
+	- data = data || {};
+
+	section#clients.clients 
+		.clients__container.container 
+			.clients__title.title!=data.title
+				.clients__list
+					each clients in data.items
+						.clients__item
+							img.clients__logo.clients__logo_top(class = clients.class src = clients.logo alt = clients.alt)
