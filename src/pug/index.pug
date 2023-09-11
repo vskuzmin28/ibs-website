@@ -170,25 +170,14 @@ block content
 
 	// BEGIN ACHIEVEMENTS
 
-	sections#achievements.achievements
-		.achievements__container.container 
-			.achievements__title.title Достижения и награды
-			img.achievements__personal(src="/assets/images/achievements/personal.png" alt="ibs.ru")
-			.achievements__list 
-				a.achievements__item(href="#" title="" target="_blank")
-					.achievements__date 2023
-					img.achievements__image(src="/assets/images/achievements/hr-brand.png" alt="HH HR brand")
-
-				a.achievements__item(href="#" title="" target="_blank")
-					.achievements__date 2022
-					img.achievements__image(src="/assets/images/achievements/riw.png" alt="Russian intranet awwards")
-
-				a.achievements__item(href="#" title="" target="_blank")
-					.achievements__date 2020
-					img.achievements__image(src="/assets/images/achievements/lider.png" alt="Интранет-лидер года")
-
-				.achievements__item.achievements__item_text 
-					| ZOOM IBS в #[span ТОП-3] в номинациях: «Интранет-лидер года» и «Интранет-команда года» экспертной премии #[span Russian Intranet Awards]
+	+achievements({
+		title: 'Достижения и награды',
+		items: [
+			{link: '', date: '2023', image: '/assets/images/achievements/hr-brand.png', alt: 'HH HR brand'},
+			{link: '', date: '2022', image: '/assets/images/achievements/riw.png', alt: 'Russian intranet awwards'},
+			{link: '', date: '2020', image: '/assets/images/achievements/lider.png', alt: 'Интранет-лидер года'}
+    	]
+	})
 
 	// END ACHIEVEMENTS
 

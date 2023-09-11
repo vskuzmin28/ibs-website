@@ -5,6 +5,7 @@
 
 @import "./../pug/components/header/header.scss";
 @import "./../pug/components/directions/directions.scss";
+@import "./../pug/components/achievements/achievements.scss";
 @import "./../pug/components/clients/clients.scss";
 
 html {
@@ -481,104 +482,6 @@ input[type=number] {
 			height: 50px;
 		}
 	}
-}
-
-// achievements
-
-.achievements {
-	$p: &;
-
-	&__container {
-		margin-top: 30px;
-		padding-top: 30px;
-		padding-bottom: 30px;
-		position: relative;
-	}
-
-	&__personal {
-		bottom: 0;
-		right: 52px;
-		position: absolute;
-		width: 489px;
-		height: 543px;
-	}
-
-	&__title {
-		margin-bottom: 60px;
-	}
-
-	&__list {
-		margin-top: 60px;
-		width: 700px;
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-
-		#{$p}__item {
-			margin: 0 30px 30px 0;
-			position: relative;
-			height: 220px;
-			transition: $transition-base;
-
-			#{$p}__date {
-				bottom: 0;
-				right: 0;
-				position: absolute;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				width: 90px;
-				height: 50px;
-				font-size: 18px;
-				font-family: $inter-600;
-				color: $color-white;
-				text-decoration: none;
-				background: $color-blue;
-				border-radius: 10px 0px;
-				transition: $transition-base;
-				z-index: 1;
-			}
-
-			#{$p}__image {
-				height: 220px;
-				border-radius: 10px 10px 20px 10px;
-				box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-			}
-
-			&:hover {
-				border-radius: 10px;
-				box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-
-				#{$p}__date {
-					background: $color-white;
-					color: $color-blue;
-				}
-			}
-
-			&_text {
-				bottom: 24px;
-				left: 560px;
-				position: absolute;
-				width: 380px;
-				height: auto;
-				font-size: 20px;
-				font-family: $poppins-400;
-				color: $color-black;
-				cursor: default;
-
-				span {
-					font-family: $poppins-600;
-					color: $color-blue;
-				}
-
-				&:hover {
-					box-shadow: none;
-				}
-			}
-
-		}
-	}
-	
 }
 
 // developers

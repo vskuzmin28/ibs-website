@@ -1,0 +1,16 @@
+mixin achievements(data)
+	- data = data || {};
+
+	sections#achievements.achievements
+		.achievements__container.container 
+			.achievements__title.title!=data.title
+			img.achievements__personal(src="/assets/images/achievements/personal.png" alt="ibs.ru")
+			.achievements__list 
+				each achievements in data.items
+					a.achievements__item(href = achievements.link title="" target="_blank")
+						.achievements__date!=achievements.date
+						img.achievements__image(src= achievements.image alt = achievements.alt)
+
+
+				.achievements__item.achievements__item_text 
+					| ZOOM IBS в #[span ТОП-3] в номинациях: «Интранет-лидер года» и «Интранет-команда года» экспертной премии #[span Russian Intranet Awards]
