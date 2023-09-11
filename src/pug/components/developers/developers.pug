@@ -1,0 +1,8 @@
+mixin developers(data)
+	- data = data || {};
+
+	section.developers 
+		.developers__container.container 
+			.developers__title!=data.title
+			.developers__text!=data.text
+			.developers__button.button!=data.button

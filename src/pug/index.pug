@@ -183,15 +183,11 @@ block content
 
 	// BEGIN DEVELOPERS
 
-	section.developers 
-		.developers__container.container 
-			.developers__title 
-				| Хотите нанять опытных разработчиков?
-
-			.developers__text 
-				| Мы понимаем бизнес-задачи наших клиентов и решаем все вопросы по разработке
-
-			.developers__button.button Нанять разработчиков
+	+developers({
+		title: 'Хотите нанять опытных разработчиков?',
+		text: 'Мы понимаем бизнес-задачи наших клиентов и решаем все вопросы по разработке',
+		button: 'Нанять разработчиков'
+	})
 
 	// END DEVELOPERS
 
@@ -241,6 +237,7 @@ block content
 							a.footer__link(href="#contacts" title="") Контакты
 
 					a.footer__get-presentation(href="#" title="") Скачать презентацию 
+
 
 				.footer__column
 					.footer__button.button Обсудить проект
