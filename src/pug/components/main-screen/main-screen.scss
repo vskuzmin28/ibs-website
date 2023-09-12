@@ -1,0 +1,78 @@
+// main-screen
+
+.main-screen {
+	$p: &;
+
+	&__container {
+		padding-bottom: 30px;
+		margin-top: 0px;
+		position: relative;
+	}
+
+	&__persona {
+		bottom: -30px;
+		right: 680px;
+		position: absolute;
+		width: 100px;
+		height: 218px;
+
+		@include desktop {
+			right: 48%;
+		}
+	}
+
+	&__list {
+		#{$p}__item {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
+		#{$p}__title {
+			margin-top: 140px;
+			width: 740px;
+			font-size: 52px;
+			font-family: $inter-500;
+			line-height: 120%;
+			cursor: default;
+			
+			strong {
+				font-family: $inter-500;
+				color: $color-blue-dark;
+			}
+
+			span {
+				color: $color-blue;
+			}
+		}
+
+		#{$p}__tags {
+			margin-top: 70px;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			width: 600px;
+
+			#{$p}__item {
+				margin-right: 30px;
+				font-size: 20px;
+				font-family: $poppins-500;
+				line-height: 180%;
+				color: $color-black;
+				cursor: default;
+
+				&_active {
+					color: $color-blue;
+				}
+			}
+		}
+
+		#{$p}__preview {
+			margin-top: 100px;
+			margin-right: -4px;
+			width: 662px;
+			height: 408px;
+		}
+	}
+
+}

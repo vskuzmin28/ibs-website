@@ -26,21 +26,18 @@ block content
 
 	// BEGIN MAIN SCREEN
 
-	section#main-screen.main-screen 
-		.main-screen__container.container
-			.main-screen__list
-				.main-screen__item
-					.main-screen__description
-						h2.main-screen__title 
-							| #[strong WEB-разработка] с фокусом на портальные решения #[br] #[span 1С-Битрикс] 
-
-						.main-screen__tags 
-							.main-screen__item Корпоративные порталы
-							.main-screen__item Личные кабинеты (b2b, b2c)
-							.main-screen__item CRM-системы
-
-					img.main-screen__preview(src="/assets/images/main/portals.png" alt="ibs.ru")
-					img.main-screen__persona(src="/assets/images/main/personal.png" alt="ibs.ru")
+	+main-screen({
+		strong: 'WEB-разработка ',
+		description: 'с фокусом на портальные решения ',
+		product: '1С-Битрикс',
+		items: [
+			{product: 'Корпоративные порталы'},
+			{product: 'Личные кабинеты (b2b, b2c)'},
+			{product: 'CRM-системы'}
+    	],
+		preview: '/assets/images/main/portals.png',
+		person: '/assets/images/main/personal.png'
+	})
 
 	// END MAIN SCREEN
 

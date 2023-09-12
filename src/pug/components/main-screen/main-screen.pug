@@ -1,0 +1,20 @@
+mixin main-screen(data)
+	- data = data || {};
+
+	section#main-screen.main-screen 
+		.main-screen__container.container
+			.main-screen__list
+				.main-screen__item
+					.main-screen__description
+						h2.main-screen__title 
+							strong!=data.strong
+							!=data.description
+							br
+							span!=data.product 
+
+						.main-screen__tags
+							each screens in data.items
+								.main-screen__item!=screens.product
+
+					img.main-screen__preview(src = data.preview alt="ibs.ru")
+					img.main-screen__persona(src = data.person alt="ibs.ru")
