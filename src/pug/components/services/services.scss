@@ -66,5 +66,14 @@
 			width: 80px;
 			height: 80px;
 		}
+
+		@include desktop {
+			width: 31.5%;
+		}
+
+		@include tablet {
+			margin-bottom: 30px;
+			width: 100%;
+		}
 	}
 }
