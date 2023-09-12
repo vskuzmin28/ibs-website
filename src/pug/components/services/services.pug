@@ -1,0 +1,112 @@
+mixin services(data)
+	- data = data || {};
+
+	//- section#services.services 
+	//- 	.services__container.container
+	//- 		h2.services__title.title Услуги
+	//- 		.services__list 
+	//- 			.services__item
+	//- 				h3.services__title Разработка
+	//- 				p.services__text Технический аудит
+	//- 				p.services__text MVP прототип
+	//- 				p.services__text Проект под ключ
+	//- 				p.services__text Поддержка и развитие
+	//- 				+icon('development').services__icon
+
+	//- 			.services__item
+	//- 				h3.services__title Аутстаф
+	//- 				p.services__text.services__text_long
+	//- 					| Сертифицированные #[br] разработчики
+	//- 				p.services__text_long
+	//- 					| Выделенная команда #[br] под проект
+	//- 				+icon('outstaff').services__icon
+
+	//- 			.services__item
+	//- 				h3.services__title Типовые решения
+	//- 				p.services__text Корпоративный портал
+	//- 				p.services__text Личный кабинет (b2b, b2c)
+	//- 				p.services__text CRM-система
+	//- 				p.services__text Интеграции
+	//- 				+icon('typical').services__icon
+
+	//- 			.services__item
+	//- 				h3.services__title Аналитика
+	//- 				p.services__text Спецификация
+	//- 				p.services__text ПМИ
+	//- 				p.services__text ТЗ по ГОСТ
+	//- 				p.services__text UX-аудит
+	//- 				+icon('analytics').services__icon
+
+	//- 			.services__item
+	//- 				h3.services__title Devops
+	//- 				p.services__text Подбор серверов 
+	//- 				p.services__text Сайзинг
+	//- 				p.services__text Инфраструктура
+	//- 				p.services__text CI/CD
+	//- 				+icon('devops').services__icon
+
+	//- 			.services__item
+	//- 				h3.services__title Дизайн
+	//- 				p.services__text Исследование 
+	//- 				p.services__text UX-тестирование
+	//- 				p.services__text Дизайн концепция
+	//- 				p.services__text Адаптивный дизайн
+	//- 				+icon('design').services__icon
+
+	section#services.services 
+		.services__container.container
+			h2.services__title.title!=data.title
+			.services__list 
+				each development in data.developments
+					.services__item
+						h3.services__title!=development.title 
+						p.services__text!=development.text1
+						p.services__text!=development.text2 
+						p.services__text!=development.text3 
+						p.services__text!=development.text4
+						+icon('development').services__icon
+
+				each outstaff in data.outstaffs
+					.services__item
+						h3.services__title!=outstaff.title 
+						p.services__text.services__text_long!=outstaff.text1
+						p.services__text!=outstaff.text2 
+						p.services__text!=outstaff.text3 
+						p.services__text!=outstaff.text4
+						+icon('outstaff').services__icon
+
+				each typical in data.typicals
+					.services__item
+						h3.services__title!=typical.title
+						p.services__text!=typical.text1
+						p.services__text!=typical.text2 
+						p.services__text!=typical.text3 
+						p.services__text!=typical.text4
+						+icon('typical').services__icon
+
+				each analytic in data.analytics
+					.services__item
+						h3.services__title!=analytic.title 
+						p.services__text!=analytic.text1
+						p.services__text!=analytic.text2 
+						p.services__text!=analytic.text3 
+						p.services__text!=analytic.text4
+						+icon('analytics').services__icon
+						
+				each devops in data.devopss
+					.services__item
+						h3.services__title!=devops.title 
+						p.services__text!=devops.text1
+						p.services__text!=devops.text2 
+						p.services__text!=devops.text3 
+						p.services__text!=devops.text4
+						+icon('devops').services__icon
+				
+				each design in data.designs
+					.services__item
+						h3.services__title!=design.title 
+						p.services__text!=design.text1
+						p.services__text!=design.text2 
+						p.services__text!=design.text3 
+						p.services__text!=design.text4
+						+icon('design').services__icon

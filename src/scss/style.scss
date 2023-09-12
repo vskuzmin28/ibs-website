@@ -4,6 +4,7 @@
 @import "helpers/sprite";
 
 @import "./../pug/components/header/header.scss";
+@import "./../pug/components/services/services.scss";
 @import "./../pug/components/directions/directions.scss";
 @import "./../pug/components/achievements/achievements.scss";
 @import "./../pug/components/developers/developers.scss";
@@ -267,77 +268,6 @@ input[type=number] {
 		}
 	}
 
-}
-
-// services
-
-.services {
-	$p: &;
-
-	margin-bottom: 30px;
-
-	&__container {
-		margin-top: 30px;
-		padding-top: 30px;
-	}
-
-	&__title {
-		margin-bottom: 60px;
-		cursor: default;
-	}
-
-	&__list {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		flex-wrap: wrap;
-	}
-
-	&__item {
-		position: relative;
-		padding: 40px;
-		display: flex;
-		flex-direction: column;
-		width: 480px;
-		background: $color-white;
-		box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.04);
-
-		&:nth-child(n+4) {
-			margin-top: 30px;
-		}
-
-		#{$p}__title {
-			margin-bottom: 40px;
-			color: #006EE9;
-			font-family: $inter-500;
-			font-size: 20px;
-		}
-
-		#{$p}__text {
-			margin-bottom: 10px;
-			font-family: $poppins-400;
-			font-size: 16px;
-			color: $color-black;
-			cursor: default;
-
-			&_long {
-				margin-bottom: 10px;
-				line-height: 180%;
-
-				&:last-child {
-					margin-bottom: 0;
-				}
-			}
-		}
-
-		svg {
-			bottom: 40px;
-			right: 40px;
-			position: absolute;
-			width: 80px;
-			height: 80px;
-		}
-	}
 }
 
 // projects
