@@ -40,6 +40,7 @@
 				width: 60px;
 				height: 60px;
 				transition: $transition-base;
+				object-fit: cover;
 
 				&:hover {
 					opacity: 0.75;
