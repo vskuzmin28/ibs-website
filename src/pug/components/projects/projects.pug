@@ -1,0 +1,47 @@
+mixin projects(data)
+	- data = data || {};
+
+	section#projects.projects 
+		.projects__container.container
+			.projects__field
+				h2.projects__title.title!=data.title
+
+				.projects__controls.controls 
+					.controls__prev
+						+icon('arrow')
+					.controls__next
+						+icon('arrow')
+
+			.projects__box
+				.projects__column 
+					.projects__description 
+						p.projects__text 
+							| В нашем портфолио #[span 30+] успешно завершенных проектов, в том числе для ПИК, УралКалий, Газпромбанк, Газпром-Нефть, Газпром и др.
+						p.projects__text 
+							| В дивизионе разработки компании #[span IBS] более #[span 1200+] высококвалифицированных специалистов, с отлаженной коммуникацией и выстроенной структурой управления
+
+					.projects__certificates
+						each certificate in data.certificates
+							img.projects__certificate(src = certificate.image alt="ibs.ru")
+
+				.projects__list
+					.projects__item 
+						each projects in data.items
+							.projects__title!=projects.title
+							.projects__content 
+								.projects__column 
+									.projects__subtitle Задачи проекта
+									.projects__text!=projects.text
+
+									.projects__subtitle Результаты
+									ul.projects__box
+										li.projects__point!=projects.point1
+										li.projects__point!=projects.point2 
+
+
+									.projects__subtitle Технология
+									.projects__text!=projects.technology
+
+								.projects__images
+									img.projects__interface(src = projects.interface alt="ibs.ru")
+									img.projects__client(src = projects.client alt="ibs.ru")

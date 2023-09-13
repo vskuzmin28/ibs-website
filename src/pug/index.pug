@@ -121,53 +121,28 @@ block content
 
 	// BEGIN PROJECTS
 
-	section#projects.projects 
-		.projects__container.container
-			.projects__field
-				h2.projects__title.title Проекты
+	+projects({
+		title: 'Проекты',
+		certificates: [
+			{image: '/assets/images/certificates/certificate-1.png'},
+			{image: '/assets/images/certificates/certificate-2.png'},
+			{image: '/assets/images/certificates/certificate-3.png'},
+			{image: '/assets/images/certificates/certificate-4.png'}
+		],
+		items: [
+			{
+				title: 'Корпоративный портал проектных офисов',
+				text: 'Разработать систему, помогающую информировать пользователей о статусе работы проектных офисов, новостях и лучших практиках',
+				point1: 'Реализованная единая ИС для госслужащих из разных минестерств и ведомств',
+				point2: 'Геймифицированное проектное управление',
+				technology: '1С-Битрикс24: Корпоративный портал',
+				interface: '/assets/images/projects/rfk.png',
+				client: '/assets/images/clients/rfk.png'
+			},
 
-				.projects__controls.controls 
-					.controls__prev
-						+icon('arrow')
-					.controls__next
-						+icon('arrow')
+    	],
 
-			.projects__box
-				.projects__column 
-					.projects__description 
-						p.projects__text 
-							| В нашем портфолио #[span 30+] успешно завершенных проектов, в том числе для ПИК, УралКалий, Газпромбанк, Газпром-Нефть, Газпром и др.
-						p.projects__text 
-							| В дивизионе разработки компании #[span IBS] более #[span 1200+] высококвалифицированных специалистов, с отлаженной коммуникацией и выстроенной структурой управления
-
-					.projects__certificates
-						img.projects__certificate(src="/assets/images/certificates/certificate-1.png" alt="ibs.ru")
-						img.projects__certificate(src="/assets/images/certificates/certificate-2.png" alt="ibs.ru")
-						img.projects__certificate(src="/assets/images/certificates/certificate-3.png" alt="ibs.ru")
-						img.projects__certificate(src="/assets/images/certificates/certificate-4.png" alt="ibs.ru")
-
-				.projects__list
-					.projects__item 
-						.projects__title Корпоративный портал проектных офисов
-						.projects__content 
-							.projects__column 
-								.projects__subtitle Задачи проекта
-								.projects__text 
-									| Разработать систему, помогающую информировать пользователей о статусе работы проектных офисов, новостях и лучших практиках
-
-								.projects__subtitle Результаты
-								ul.projects__box
-									li.projects__point
-										| Реализованная единая ИС для госслужащих из разных минестерств и ведомств
-									li.projects__point
-										| Геймифицированное проектное управление								
-
-								.projects__subtitle Технология
-								.projects__text 
-									| 1С-Битрикс24: Корпоративный портал
-							.projects__images
-								img.projects__interface(src="/assets/images/projects/rfk.png" alt="ibs.ru")
-								img.projects__client(src="/assets/images/clients/rfk.png" alt="ibs.ru")
+	})
 
 	// END PROJECTS
 

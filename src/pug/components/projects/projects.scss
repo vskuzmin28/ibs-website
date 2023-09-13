@@ -1,0 +1,148 @@
+// projects
+
+.projects {
+	$p: &;
+
+	margin-bottom: 30px;
+
+	&__container {
+		margin-top: 30px;
+		padding-top: 30px;
+	}
+
+	&__field {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__box {
+		margin-top: 60px;
+		display: flex;
+		flex-direction: row;
+
+		#{$p}__column {
+			display: flex;
+			flex-direction: column;
+		}
+
+		#{$p}__description {
+			margin: 0 30px 0 0;
+			padding: 20px;
+			background: $color-white;
+			box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.04);
+		}
+
+		#{$p}__text {
+			margin-bottom: 40px;
+			font-size: 18px;
+			font-family: $poppins-400;
+			line-height: 140%;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			span {
+				font-family: $poppins-500;
+				color: $color-blue;
+			}
+		}
+
+		#{$p}__certificates {
+			margin-top: 60px;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+
+			#{$p}__certificate {
+				margin: 0 10px 10px 0;
+				height: 80px;
+			}
+		}
+	}
+
+	&__list {
+		margin-top: 0px;
+		flex-direction: row;
+		flex-wrap: nowrap;
+
+		#{$p}__item {
+			padding: 40px;
+			width: 977px;
+			background: $color-white;
+			box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.04);
+
+			#{$p}__content {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+			}
+		}
+
+		#{$p}__column {
+			width: 424px;
+		}
+
+		#{$p}__title {
+			margin-bottom: 30px;
+			font-size: 32px;
+			font-family: $inter-500;
+			line-height: 100%;
+			color: $color-black;
+		}
+
+		#{$p}__subtitle {
+			margin-bottom: 20px;
+			font-size: 16px;
+			font-family: $poppins-600;
+			color: $color-blue;
+		}
+
+		#{$p}__text {
+			margin-bottom: 30px;
+			font-size: 16px;
+			font-family: $poppins-400;
+			line-height: 140%;
+		}
+
+		#{$p}__box {
+			margin: 0 0 30px 0;
+			padding-left: 10px;
+			flex-direction: column;
+			list-style: inside;
+
+			#{$p}__point {
+				margin-bottom: 10px;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		#{$p}__images {
+			width: 500px;
+			position: relative;
+			display: flex;
+			flex-direction: column;
+		}
+
+		#{$p}__interface {
+			top: 0;
+			right: -40px;
+			position: absolute;
+			width: 478px;
+			height: 310px;
+		}
+
+		#{$p}__client {
+			bottom: 0;
+			right: 0px;
+			position: absolute;
+			width: 100px;
+			height: 50px;
+		}
+	}
+}
