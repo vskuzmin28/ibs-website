@@ -1,0 +1,44 @@
+mixin footer(data)
+	- data = data || {};
+
+	footer.footer 
+		.footer__container.container 
+			.footer__top 
+				.footer__column 
+					a.footer__logo.logo(href= "#" title="")
+						img.footer__image(src= data.logo alt="ibs.ru")
+					each telephone in data.telephones
+						a.footer__phone(href= "tel" + telephone.telephone title="")!=telephone.telephone
+
+					address.footer__address!=data.address
+
+				.footer__column 
+					ul.footer__navigation.navigation
+						each navigation in data.navigations
+							li.footer__item 
+								a.footer__link(href = navigation.link title="")!=navigation.title
+
+					a.footer__get-presentation(href = data.presentionLink title="")!=data.presentanionTitle
+
+
+				.footer__column
+					.footer__button.button!=data.button
+					.footer__text 
+						| Электронная почта:
+						a.footer__link(href= "mailto" + data.email title="")!=data.email
+
+			.footer__bottom 
+				p.footer__copyright!=data.copyright
+
+				a.footer__link(href = data.persInfoLink title="")!=data.persInfoTitle
+
+				ul.footer__socials 
+					li.footer__item 
+						a.footer__link(href="#" target="_blank" title="vk")
+							+icon('vk')
+					li.footer__item 
+						a.footer__link(href="#" target="_blank" title="in")
+							+icon('in')
+					li.footer__item 
+						a.footer__link(href="#" target="_blank" title="ibs.ru")
+							+icon('ibs')

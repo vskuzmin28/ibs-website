@@ -212,58 +212,28 @@ block content
 
 	// BEGIN FOOTER
 
-	footer.footer 
-		.footer__container.container 
-			.footer__top 
-				.footer__column 
-					a.footer__logo.logo(href="#" title="")
-						img.footer__image(src="/assets/images/logo-white.png" alt="ibs.ru")
-					a.footer__phone(href="tel:84959678080" title="") +7 (495) 967-80-80
-					a.footer__phone(href="tel:89141956459" title="") +7 (914) 195-64-59
-
-					address.footer__address 
-						| Россия, 127434, город Москва, Дмитровское шоссе, дом 9-Б, эт. 5 пом. XIII, ком. 6
-
-				.footer__column 
-					ul.footer__navigation.navigation
-						li.footer__item 
-							a.footer__link(href="#services" title="") Услуги 
-						li.footer__item 
-							a.footer__link(href="#achievements" title="") Достижения 
-						li.footer__item 
-							a.footer__link(href="#directions" title="") Направления 
-						li.footer__item 
-							a.footer__link(href="#clients" title="") Клиенты
-						li.footer__item 
-							a.footer__link(href="#projects" title="") Проекты 
-						li.footer__item 
-							a.footer__link(href="#contacts" title="") Контакты
-
-					a.footer__get-presentation(href="#" title="") Скачать презентацию 
-
-
-				.footer__column
-					.footer__button.button Обсудить проект
-					.footer__text 
-						| Электронная почта:
-						a.footer__link(href="mailto:web@ibs.ru" title="") web@ibs.ru
-
-			.footer__bottom 
-				p.footer__copyright
-					| © ООО «ИБС Экспертиза», 2023. Все права защищены
-
-				a.footer__link(href="#" title="")
-					| Персональные данные и правовые аспекты
-
-				ul.footer__socials 
-					li.footer__item 
-						a.footer__link(href="#" target="_blank" title="vk")
-							+icon('vk')
-					li.footer__item 
-						a.footer__link(href="#" target="_blank" title="in")
-							+icon('in')
-					li.footer__item 
-						a.footer__link(href="#" target="_blank" title="ibs.ru")
-							+icon('ibs')
+	+footer({
+		logo: '/assets/images/logo-white.png',
+		telephones: [
+			{telephone: '+7 (495) 967-80-80'},
+			{telephone: '+7 (914) 195-64-59'}
+		],
+		address: 'Россия, 127434, город Москва, Дмитровское шоссе, дом 9-Б, эт. 5 пом. XIII, ком. 6',
+		navigations: [
+			{title: 'Услуги', link: '#services'},
+			{title: 'Достижения', link: '#achievements'},
+			{title: 'Направления', link: '#directions'},
+			{title: 'Клиенты', link: '#clients'},
+			{title: 'Проекты', link: '#projects'},
+			{title: 'Контакты', link: '#contacts'}
+		],
+		presentanionLink: '#',
+		presentanionTitle: 'Скачать презентацию ',
+		persInfoLink: '#',
+		persInfoTitle: 'Персональные данные и правовые аспекты',
+		button: 'Обсудить проект',
+		email: 'web@ibs.ru',
+		copyright: '© ООО «ИБС Экспертиза», 2023. Все права защищены'
+	})
 
 	// END FOOTER
