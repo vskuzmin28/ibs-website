@@ -1,7 +1,7 @@
 extends ../pug/layout/main
 
 block variables
-	-let title = 'IBS - web-разработка'
+	-let title = 'Внедрение корпоративного портала на базе решения 1С-Битрикс24 | IBS - web-разработка'
 	-let description = ''
 	-let keywords = ''
 
@@ -13,11 +13,12 @@ block content
 		logo: '/assets/images/logo-blue.png',
 		alt: 'ibs.ru',
 		items: [
-			{link: '#services', title: 'Услуги'},
-			{link: '#directions', title: 'Направления'},
-			{link: '#projects', title: 'Проекты'},
-			{link: '#clients', title: 'Клиенты'},
-			{link: '#contacts', title: 'Контакты'},
+			{title: 'Экспертиза', link: '#services'},
+			{title: 'Клиенты', link: '#directions'},
+			{title: 'Награды', link: '#projects'},
+			{title: 'Возможности', link: '#clients'},
+			{title: 'Платформа', link: '#contacts'},
+			{title: 'Проекты', link: '#contacts'}
     	],
 		button: 'Обсудить проект'
 	})
@@ -27,9 +28,9 @@ block content
 	// BEGIN MAIN SCREEN
 
 	+main-screen({
-		strong: 'WEB-разработка ',
-		description: 'с фокусом на портальные решения ',
-		product: '1С-Битрикс',
+		strong: '',
+		description: 'Внедрение корпоративных порталов на ',
+		product: '1С-Битрикс24',
 		items: [
 			{product: 'Корпоративные порталы'},
 			{product: 'Личные кабинеты (b2b, b2c)'},
@@ -195,12 +196,12 @@ block content
 		],
 		address: 'Россия, 127434, город Москва, Дмитровское шоссе, дом 9-Б, эт. 5 пом. XIII, ком. 6',
 		navigations: [
-			{title: 'Услуги', link: '#services'},
-			{title: 'Достижения', link: '#achievements'},
-			{title: 'Направления', link: '#directions'},
-			{title: 'Клиенты', link: '#clients'},
-			{title: 'Проекты', link: '#projects'},
-			{title: 'Контакты', link: '#contacts'}
+			{title: 'Экспертиза', link: '#services'},
+			{title: 'Клиенты', link: '#achievements'},
+			{title: 'Награды', link: '#directions'},
+			{title: 'Возможности', link: '#clients'},
+			{title: 'Платформа', link: '#projects'},
+			{title: 'Проекты', link: '#contacts'}
 		],
 		presentanionLink: '#',
 		presentanionTitle: 'Скачать презентацию ',
