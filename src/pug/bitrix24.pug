@@ -1,0 +1,214 @@
+extends ../pug/layout/main
+
+block variables
+	-let title = 'IBS - web-разработка'
+	-let description = ''
+	-let keywords = ''
+
+block content
+
+	// BEGIN HEADER
+
+	+header({
+		logo: '/assets/images/logo-blue.png',
+		alt: 'ibs.ru',
+		items: [
+			{link: '#services', title: 'Услуги'},
+			{link: '#directions', title: 'Направления'},
+			{link: '#projects', title: 'Проекты'},
+			{link: '#clients', title: 'Клиенты'},
+			{link: '#contacts', title: 'Контакты'},
+    	],
+		button: 'Обсудить проект'
+	})
+
+	// END HEADER
+
+	// BEGIN MAIN SCREEN
+
+	+main-screen({
+		strong: 'WEB-разработка ',
+		description: 'с фокусом на портальные решения ',
+		product: '1С-Битрикс',
+		items: [
+			{product: 'Корпоративные порталы'},
+			{product: 'Личные кабинеты (b2b, b2c)'},
+			{product: 'CRM-системы'}
+    	],
+		preview: '/assets/images/main/portals.png',
+		person: '/assets/images/main/personal.png'
+	})
+
+	// END MAIN SCREEN
+
+	// BEGIN SERVICES
+
+	+services({
+		title: 'Услуги',
+		developments: [
+			{
+				title: 'Разработка', 
+				text1: 'Технический аудит', 
+				text2: 'MVP прототип', 
+				text3: 'Проект под ключ', 
+				text4: 'Поддержка и развитие'
+			}
+		],
+		outstaffs: [
+			{
+				title: 'Аутстаф', 
+				text1: 'Сертифицированные разработчики', 
+				text2: 'Выделенная команда', 
+				text3: 'Конкурентные ставки', 
+				text4: 'Резюме по запросу'
+			}
+		],
+		typicals: [
+			{
+				title: 'Типовые решения', 
+				text1: 'Корпоративный портал', 
+				text2: 'Личный кабинет (b2b, b2c)', 
+				text3: 'CRM-система', 
+				text4: 'Интеграции'
+			}
+		],
+		analytics: [
+			{
+				title: 'Аналитика', 
+				text1: 'Спецификация', 
+				text2: 'ПМИ', 
+				text3: 'ТЗ по ГОСТ', 
+				text4: 'UX-аудит'
+			}
+		],
+		devopss: [
+			{
+				title: 'Devops', 
+				text1: 'Подбор серверов', 
+				text2: 'Сайзинг', 
+				text3: 'Инфраструктура', 
+				text4: 'CI/CD'
+			}
+		],
+		designs: [
+			{
+				title: 'Дизайн', 
+				text1: 'Исследование', 
+				text2: 'UX-тестирование', 
+				text3: 'Дизайн концепция', 
+				text4: 'Адаптивный дизайн'
+			}
+		],
+	})
+
+	// END SERVICES
+
+	// BEGIN DIRECTIONS
+
+	+directions({
+		title: 'Направления',
+		items: [
+			{link: 'https://ibs.ru/industries/government/', logo: '/assets/images/directions/icon-state.png', alt: 'Госсектор', title: 'Госсектор'},
+			{link: 'https://ibs.ru/industries/gas/', logo: '/assets/images/directions/icon-gas.png', alt: 'Газ, нефть', title: 'Газ, нефть'},
+			{link: 'https://ibs.ru/industries/agro/', logo: '/assets/images/directions/icon-agro.png', alt: 'Агросектор', title: 'Агросектор'},
+			{link: 'https://ibs.ru/industries/retail/', logo: '/assets/images/directions/icon-riteil.png', alt: 'Ритейл', title: 'Ритейл'},
+			{link: 'https://ibs.ru/industries/production/', logo: '/assets/images/directions/icon-transport.png', alt: 'Транспорт', title: 'Транспорт'},
+			{link: 'https://ibs.ru/industries/energy/', logo: '/assets/images/directions/icon-energy.png', alt: 'Энергетика', title: 'Энергетика'}
+    	]
+	})
+
+	// END DIRECTIONS
+
+	// BEGIN PROJECTS
+
+	+projects({
+		title: 'Проекты',
+		certificates: [
+			{image: '/assets/images/certificates/certificate-1.png'},
+			{image: '/assets/images/certificates/certificate-2.png'},
+			{image: '/assets/images/certificates/certificate-3.png'},
+			{image: '/assets/images/certificates/certificate-4.png'}
+		],
+		items: [
+			{
+				title: 'Корпоративный портал проектных офисов',
+				text: 'Разработать систему, помогающую информировать пользователей о статусе работы проектных офисов, новостях и лучших практиках',
+				point1: 'Реализованная единая ИС для госслужащих из разных минестерств и ведомств',
+				point2: 'Геймифицированное проектное управление',
+				technology: '1С-Битрикс24: Корпоративный портал',
+				interface: '/assets/images/projects/rfk.png',
+				client: '/assets/images/clients/rfk.png'
+			},
+
+    	],
+
+	})
+
+	// END PROJECTS
+
+	// BEGIN ACHIEVEMENTS
+
+	+achievements({
+		title: 'Достижения и награды',
+		items: [
+			{link: '', date: '2023', image: '/assets/images/achievements/hr-brand.png', alt: 'HH HR brand'},
+			{link: '', date: '2022', image: '/assets/images/achievements/riw.png', alt: 'Russian intranet awwards'},
+			{link: '', date: '2020', image: '/assets/images/achievements/lider.png', alt: 'Интранет-лидер года'}
+    	]
+	})
+
+	// END ACHIEVEMENTS
+
+	// BEGIN DEVELOPERS
+
+	+developers({
+		title: 'Хотите нанять опытных разработчиков?',
+		text: 'Мы понимаем бизнес-задачи наших клиентов и решаем все вопросы по разработке',
+		button: 'Нанять разработчиков'
+	})
+
+	// END DEVELOPERS
+
+	// BEGIN CLIENTS
+
+	+clients({
+		title: 'Ключевые клиенты',
+		items: [
+			{logo: '/assets/images/clients/gazprom-neft.png', alt: 'Газпром нефть', class: 'clients__logo_top'},
+			{logo: '/assets/images/clients/rts.png', alt: 'РегионТрансСервис'},
+			{logo: '/assets/images/clients/omk.png', alt: 'ОМК', class: 'clients__logo_omk'},
+			{logo: '/assets/images/clients/gazprom-inform.png', alt: 'Газпром информ', class: 'clients__logo_top'},
+			{logo: '/assets/images/clients/rfk.png', alt: 'Федеральное казначейство', class: 'clients__logo_top'},
+			{logo: '/assets/images/clients/tishuka.png', alt: 'Театральный институт имени Б. Щукина'}
+    	]
+	})
+
+	// END CLIENTS
+
+	// BEGIN FOOTER
+
+	+footer({
+		logo: '/assets/images/logo-white.png',
+		telephones: [
+			{telephone: '+7 (495) 967-80-80'},
+			{telephone: '+7 (914) 195-64-59'}
+		],
+		address: 'Россия, 127434, город Москва, Дмитровское шоссе, дом 9-Б, эт. 5 пом. XIII, ком. 6',
+		navigations: [
+			{title: 'Услуги', link: '#services'},
+			{title: 'Достижения', link: '#achievements'},
+			{title: 'Направления', link: '#directions'},
+			{title: 'Клиенты', link: '#clients'},
+			{title: 'Проекты', link: '#projects'},
+			{title: 'Контакты', link: '#contacts'}
+		],
+		presentanionLink: '#',
+		presentanionTitle: 'Скачать презентацию ',
+		persInfoLink: '#',
+		persInfoTitle: 'Персональные данные и правовые аспекты',
+		button: 'Обсудить проект',
+		email: 'web@ibs.ru',
+		copyright: '© ООО «ИБС Экспертиза», 2023. Все права защищены'
+	})
+
+	// END FOOTER
