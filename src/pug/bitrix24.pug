@@ -2,8 +2,8 @@ extends ../pug/layout/main
 
 block variables
 	-let title = 'Внедрение корпоративного портала на базе решения 1С-Битрикс24 | IBS - web-разработка'
-	-let description = ''
-	-let keywords = ''
+	-let description = 'IBS WEB - команда разработки с фокусом на портальные решения на базе решения 1С-Битрикс24'
+	-let keywords = '1С-Битрик24, Битрикс24, Битрикс, Битра, CRM, Корпоративный, Портал, Bitrix24'
 
 block content
 
@@ -42,83 +42,44 @@ block content
 
 	// END MAIN SCREEN
 
-	// BEGIN SERVICES
+	// BEGIN CLIENTS
 
-	+services({
-		title: 'Услуги',
-		developments: [
-			{
-				title: 'Разработка', 
-				text1: 'Технический аудит', 
-				text2: 'MVP прототип', 
-				text3: 'Проект под ключ', 
-				text4: 'Поддержка и развитие'
-			}
-		],
-		outstaffs: [
-			{
-				title: 'Аутстаф', 
-				text1: 'Сертифицированные разработчики', 
-				text2: 'Выделенная команда', 
-				text3: 'Конкурентные ставки', 
-				text4: 'Резюме по запросу'
-			}
-		],
-		typicals: [
-			{
-				title: 'Типовые решения', 
-				text1: 'Корпоративный портал', 
-				text2: 'Личный кабинет (b2b, b2c)', 
-				text3: 'CRM-система', 
-				text4: 'Интеграции'
-			}
-		],
-		analytics: [
-			{
-				title: 'Аналитика', 
-				text1: 'Спецификация', 
-				text2: 'ПМИ', 
-				text3: 'ТЗ по ГОСТ', 
-				text4: 'UX-аудит'
-			}
-		],
-		devopss: [
-			{
-				title: 'Devops', 
-				text1: 'Подбор серверов', 
-				text2: 'Сайзинг', 
-				text3: 'Инфраструктура', 
-				text4: 'CI/CD'
-			}
-		],
-		designs: [
-			{
-				title: 'Дизайн', 
-				text1: 'Исследование', 
-				text2: 'UX-тестирование', 
-				text3: 'Дизайн концепция', 
-				text4: 'Адаптивный дизайн'
-			}
-		],
-	})
-
-	// END SERVICES
-
-	// BEGIN DIRECTIONS
-
-	+directions({
-		title: 'Направления',
+	+clients({
+		title: 'Ключевые клиенты',
 		items: [
-			{link: 'https://ibs.ru/industries/government/', logo: '/assets/images/directions/icon-state.png', alt: 'Госсектор', title: 'Госсектор'},
-			{link: 'https://ibs.ru/industries/gas/', logo: '/assets/images/directions/icon-gas.png', alt: 'Газ, нефть', title: 'Газ, нефть'},
-			{link: 'https://ibs.ru/industries/agro/', logo: '/assets/images/directions/icon-agro.png', alt: 'Агросектор', title: 'Агросектор'},
-			{link: 'https://ibs.ru/industries/retail/', logo: '/assets/images/directions/icon-riteil.png', alt: 'Ритейл', title: 'Ритейл'},
-			{link: 'https://ibs.ru/industries/production/', logo: '/assets/images/directions/icon-transport.png', alt: 'Транспорт', title: 'Транспорт'},
-			{link: 'https://ibs.ru/industries/energy/', logo: '/assets/images/directions/icon-energy.png', alt: 'Энергетика', title: 'Энергетика'}
+			{logo: '/assets/images/clients/gazprom-neft.png', alt: 'Газпром нефть', class: 'clients__logo_top'},
+			{logo: '/assets/images/clients/rts.png', alt: 'РегионТрансСервис'},
+			{logo: '/assets/images/clients/omk.png', alt: 'ОМК', class: 'clients__logo_omk'},
+			{logo: '/assets/images/clients/gazprom-inform.png', alt: 'Газпром информ', class: 'clients__logo_top'},
+			{logo: '/assets/images/clients/rfk.png', alt: 'Федеральное казначейство', class: 'clients__logo_top'},
+			{logo: '/assets/images/clients/tishuka.png', alt: 'Театральный институт имени Б. Щукина'}
     	]
 	})
 
-	// END DIRECTIONS
+	// END CLIENTS
+
+	// BEGIN ACHIEVEMENTS
+
+	+achievements({
+		title: 'Достижения и награды',
+		items: [
+			{link: '', date: '2023', image: '/assets/images/achievements/hr-brand.png', alt: 'HH HR brand'},
+			{link: '', date: '2022', image: '/assets/images/achievements/riw.png', alt: 'Russian intranet awwards'},
+			{link: '', date: '2020', image: '/assets/images/achievements/lider.png', alt: 'Интранет-лидер года'}
+    	]
+	})
+
+	// END ACHIEVEMENTS
+
+	// BEGIN DEVELOPERS
+
+	+developers({
+		title: 'Хотите нанять опытных разработчиков?',
+		text: 'Мы понимаем бизнес-задачи наших клиентов и решаем все вопросы по разработке',
+		button: 'Нанять разработчиков'
+	})
+
+	// END DEVELOPERS
 
 	// BEGIN PROJECTS
 
@@ -147,44 +108,21 @@ block content
 
 	// END PROJECTS
 
-	// BEGIN ACHIEVEMENTS
+	// BEGIN DIRECTIONS
 
-	+achievements({
-		title: 'Достижения и награды',
+	+directions({
+		title: 'Направления',
 		items: [
-			{link: '', date: '2023', image: '/assets/images/achievements/hr-brand.png', alt: 'HH HR brand'},
-			{link: '', date: '2022', image: '/assets/images/achievements/riw.png', alt: 'Russian intranet awwards'},
-			{link: '', date: '2020', image: '/assets/images/achievements/lider.png', alt: 'Интранет-лидер года'}
+			{link: 'https://ibs.ru/industries/government/', logo: '/assets/images/directions/icon-state.png', alt: 'Госсектор', title: 'Госсектор'},
+			{link: 'https://ibs.ru/industries/gas/', logo: '/assets/images/directions/icon-gas.png', alt: 'Газ, нефть', title: 'Газ, нефть'},
+			{link: 'https://ibs.ru/industries/agro/', logo: '/assets/images/directions/icon-agro.png', alt: 'Агросектор', title: 'Агросектор'},
+			{link: 'https://ibs.ru/industries/retail/', logo: '/assets/images/directions/icon-riteil.png', alt: 'Ритейл', title: 'Ритейл'},
+			{link: 'https://ibs.ru/industries/production/', logo: '/assets/images/directions/icon-transport.png', alt: 'Транспорт', title: 'Транспорт'},
+			{link: 'https://ibs.ru/industries/energy/', logo: '/assets/images/directions/icon-energy.png', alt: 'Энергетика', title: 'Энергетика'}
     	]
 	})
 
-	// END ACHIEVEMENTS
-
-	// BEGIN DEVELOPERS
-
-	+developers({
-		title: 'Хотите нанять опытных разработчиков?',
-		text: 'Мы понимаем бизнес-задачи наших клиентов и решаем все вопросы по разработке',
-		button: 'Нанять разработчиков'
-	})
-
-	// END DEVELOPERS
-
-	// BEGIN CLIENTS
-
-	+clients({
-		title: 'Ключевые клиенты',
-		items: [
-			{logo: '/assets/images/clients/gazprom-neft.png', alt: 'Газпром нефть', class: 'clients__logo_top'},
-			{logo: '/assets/images/clients/rts.png', alt: 'РегионТрансСервис'},
-			{logo: '/assets/images/clients/omk.png', alt: 'ОМК', class: 'clients__logo_omk'},
-			{logo: '/assets/images/clients/gazprom-inform.png', alt: 'Газпром информ', class: 'clients__logo_top'},
-			{logo: '/assets/images/clients/rfk.png', alt: 'Федеральное казначейство', class: 'clients__logo_top'},
-			{logo: '/assets/images/clients/tishuka.png', alt: 'Театральный институт имени Б. Щукина'}
-    	]
-	})
-
-	// END CLIENTS
+	// END DIRECTIONS
 
 	// BEGIN FOOTER
 
