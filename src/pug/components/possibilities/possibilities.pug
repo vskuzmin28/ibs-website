@@ -1,0 +1,10 @@
+mixin possibilities(data)
+	- data = data || {};
+
+	section#possibilities.possibilities 
+		.possibilities__container.container 
+			.possibilities__title.title!=data.title
+				.possibilities__list
+					each clients in data.items
+						.possibilities__item
+							
