@@ -1,0 +1,10 @@
+mixin expertise(data)
+	- data = data || {};
+
+	section#expertise.expertise 
+		.expertise.container 
+			.expertise__title.title!=data.title
+				.expertises__list
+					each expertise in data.items
+						.expertise__item
+							

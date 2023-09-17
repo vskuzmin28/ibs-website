@@ -18,3 +18,23 @@ mixin main-screen(data)
 
 					img.main-screen__preview(src = data.preview alt="ibs.ru")
 					img.main-screen__persona(src = data.person alt="ibs.ru")
+
+mixin main-screen-bitrix(data)
+	- data = data || {};
+
+	section#main-screen.main-screen 
+		.main-screen__container.container
+			.main-screen__list
+				.main-screen__item
+					.main-screen__description
+						h2.main-screen__title 
+							strong!=data.strong
+							span!=data.product 
+
+						.main-screen__tags.main-screen__tags_bitrix
+							each certificates in data.items
+								.main-screen__item
+									img(src = certificates.image alt="ibs.ru")
+
+					img.main-screen__preview(src = data.preview alt="ibs.ru")
+					img.main-screen__persona(src = data.person alt="ibs.ru")
