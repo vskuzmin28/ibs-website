@@ -5,6 +5,8 @@ block variables
 	-let description = 'IBS WEB - команда разработки с фокусом на портальные решения на базе решения 1С-Битрикс24'
 	-let keywords = '1С-Битрик24, Битрикс24, Битрикс, Битра, CRM, Корпоративный, Портал, Bitrix24'
 
+	// https://ibs-infinisoft.ru/services/web-development/#b532
+
 block content
 
 	// BEGIN HEADER
@@ -13,12 +15,11 @@ block content
 		logo: '/assets/images/logo-blue.png',
 		alt: 'ibs.ru',
 		items: [
-			{title: 'Экспертиза', link: '#services'},
-			{title: 'Клиенты', link: '#directions'},
-			{title: 'Награды', link: '#projects'},
-			{title: 'Возможности', link: '#clients'},
-			{title: 'Платформа', link: '#contacts'},
-			{title: 'Проекты', link: '#contacts'}
+			{title: 'Экспертиза', link: '#expertise'},
+			{title: 'Клиенты', link: '#clients'},
+			{title: 'Награды', link: '#achievements'},
+			{title: 'Возможности', link: '#possibilities'},
+			{title: 'Платформа', link: '#platform'}
     	],
 		button: 'Обсудить проект'
 	})
@@ -89,6 +90,46 @@ block content
 
 	// END DEVELOPERS
 
+	// BEGIN POSSIBILITIES
+
+	+possibilities({
+		title: 'Возможности',
+		items: [
+			{
+				image: '/assets/images/possibilities/possibilitie-1.png',
+				subtitle: 'Битрикс24.crm',
+				text: 'Автоматизация работы на всех этапах взаимодействия с клиентом. Единая база сделок, лидов, контактов. Задачи и напоминания для менеджеров. История всех взаимодействий с клиентом. Удобная визуализация результатов работы сотрудников и отделов в дашбордах. Единое окно взаимодействия с клиентами через социальные сети, телефонию и почту'
+			},
+			{
+				image: '/assets/images/possibilities/possibilitie-2.png',
+				subtitle: 'Корпоративный портал',
+				text: 'Единое пространство для общения всей компании, удобное планирование расписания и встреч с коллегами, возможность совершать видеозвонки HD. Единое хранилище данных, база знаний. Постановка задач, назначение ролей, учет рабочего времени сотрудников, KPI'
+			},
+			{
+				image: '/assets/images/possibilities/possibilitie-3.png',
+				subtitle: 'HR-решения',
+				text: 'Адаптация сотрудника во внутрикорпоративных взаимодействиях. Личный кабинет сотрудника, чаты, рабочие группы, фотогалереи, блоги, геймификация, бонусы. Публикация вакансий, импорт резюме. Индивидуальный план развития сотрудника, кадровый резерв. Прием и увольнение сотрудника. График отпусков, заявление на отпуск'
+			},
+			{
+				image: '/assets/images/possibilities/possibilitie-4.png',
+				subtitle: 'Автоматизация бизнес‑процессов',
+				text: 'Платформа позволит оперативно и прозрачно адаптировать, оцифровать и автоматизировать ваши уникальные бизнес-процессы. Любое согласование, ознакомление и принятие решения произойдет точно в срок, снижая риск человеческого фактора'
+			},
+			{
+				image: '/assets/images/possibilities/possibilitie-5.png',
+				subtitle: 'Расширенный функционал',
+				text: 'Индивидуальная разработка модулей и приложений, адаптация стандартных возможностей под требования бизнеса. Добавление новых сущностей, статусов, кнопок. Отчеты в нужном вам виде. Создание интерфейса под ваш корпоративный стиль. Разработка мобильной версии корпоративного портала, для работы сотрудников вне офисного пространства'
+			},
+			{
+				image: '/assets/images/possibilities/possibilitie-6.png',
+				subtitle: 'Интеграция и быстродействие',
+				text: 'Интегрируем с CRM- и ERP- системами заказчика (SAP, 1C, Microsoft Dynamics, Microsoft Active Directory, Microsoft Outlook, КСУ НСИ)'
+			}
+		]
+	})
+
+	// END POSSIBILITIES
+
 	// BEGIN PROJECTS
 
 	+projects({
@@ -123,7 +164,7 @@ block content
 		items: [
 			{title: 'Государственные программы', link: 'https://ibs.ru/industries/government/', logo: '/assets/images/directions/icon-state.png', alt: 'Государственные программы'},
 			{title: 'Газовая индустрия', link: 'https://ibs.ru/industries/gas/', logo: '/assets/images/directions/icon-gas.png', alt: 'Газовая индустрия'},
-			{title: 'Агро-промышленность', link: 'https://ibs.ru/industries/agro/', logo: '/assets/images/directions/icon-agro.png', alt: 'Агро-промышленность'},
+			{title: 'Агропромышленность', link: 'https://ibs.ru/industries/agro/', logo: '/assets/images/directions/icon-agro.png', alt: 'Агро-промышленность'},
 			{title: 'ТНП и Ритейл', link: 'https://ibs.ru/industries/retail/', logo: '/assets/images/directions/icon-riteil.png', alt: 'ТНП и Ритейл'},
 			{title: 'Промышленность и транспорт', link: 'https://ibs.ru/industries/production/', logo: '/assets/images/directions/icon-transport.png', alt: 'Промышленность и транспорт'},
 			{title: 'Энергетика и ЖКХ', link: 'https://ibs.ru/industries/energy/', logo: '/assets/images/directions/icon-energy.png', alt: 'Энергетика и ЖКХ'}
@@ -142,12 +183,11 @@ block content
 		],
 		address: 'Россия, 127434, город Москва, Дмитровское шоссе, дом 9-Б, эт. 5 пом. XIII, ком. 6',
 		navigations: [
-			{title: 'Экспертиза', link: '#services'},
-			{title: 'Клиенты', link: '#achievements'},
-			{title: 'Награды', link: '#directions'},
-			{title: 'Возможности', link: '#clients'},
-			{title: 'Платформа', link: '#projects'},
-			{title: 'Проекты', link: '#contacts'}
+			{title: 'Экспертиза', link: '#expertise'},
+			{title: 'Клиенты', link: '#clients'},
+			{title: 'Награды', link: '#achievements'},
+			{title: 'Возможности', link: '#possibilities'},
+			{title: 'Платформа', link: '#platform'}
 		],
 		presentanionLink: '#',
 		presentanionTitle: 'Скачать презентацию ',
