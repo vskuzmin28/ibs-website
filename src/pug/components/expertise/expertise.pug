@@ -4,8 +4,37 @@ mixin expertise(data)
 	section#expertise.expertise 
 		.expertise.container 
 			.expertise__title.title!=data.title
-				.expertises__list
-					each expertise in data.items
-						.expertise__item
+				.expertise__list
+					.expertise__item
 							.expertise__title 
+								| Разработка
+							ul.expertise__points 
+								li.expertise__point
+									| Требуется автоматизировать бизнес-процессы и повысить эффективность управления компанией
+								li.expertise__point 
+									| Необходимо объединить команду удаленных специалистов в единое цифровое пространство
+								li.expertise__point 
+									| Уникальные бизнес-процессы компании требуют аналитики и экспертизы
+								li.expertise__point 
+									| Необходимо чтобы над вашим проектом работали сертифицированные профессионалы
+								li.expertise__point 
+									| Вы нацелены на долгосрочное развитие и оптимизацию проекта
+
+					.expertise__item.expertise__item_white
+							.expertise__title 
+								| Типовые решения
+							ul.expertise__points 
+								li.expertise__point 
+									| Внедрение Битрикс24 в компании с численностью сотрудников от 1000 человек
+								li.expertise__point 
+									| Работа в качестве партнеров, а не исполнителей, предлагать передовые решения, экономя время ваших аналитиков
+								li.expertise__point 
+									| Расширение основного функционала Битрикс24 и интегрирование его в ваши уникальные бизнес-процессы
+								li.expertise__point 
+									| Внедрение корпоративного портала с любыми внутренними системами и сторонними сервисами
+
+							a.expertise__get-presentation(href="#" title="")
+								+icon('download')
+								| Скачать презентацию					
+
 							

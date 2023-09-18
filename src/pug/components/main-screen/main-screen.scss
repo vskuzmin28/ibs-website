@@ -67,8 +67,17 @@
 				}
 			}
 
-			&_certificates {
-				
+			&_bitrix {
+				margin-top: 60px;
+
+				#{$p}__item {
+					margin-right: 10px;
+
+					img {
+						height: 50px;
+						object-fit: cover;
+					}
+				}
 			}
 		}
 
