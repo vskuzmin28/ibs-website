@@ -15,8 +15,7 @@
 @import "./../pug/components/clients/clients.scss";
 @import "./../pug/components/footer/footer.scss";
 @import "./../pug/components/expertise/expertise.scss";
-
-
+@import "./../pug/components/platform/platform.scss";
 
 
 html {
@@ -150,6 +149,7 @@ input[type=number] {
 	color: $color-black;
 	cursor: pointer;
 	transition: $transition-base;
+	text-decoration: none;
 }
 
 // title 

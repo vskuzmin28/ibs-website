@@ -8,7 +8,7 @@ mixin footer(data)
 					a.footer__logo.logo(href= "#" title="")
 						img.footer__image(src= data.logo alt="ibs.ru")
 					each telephone in data.telephones
-						a.footer__phone(href= "tel" + telephone.telephone title="")!=telephone.telephone
+						a.footer__phone(href= "tel:" + telephone.tel title="")!=telephone.telephone
 
 					address.footer__address!=data.address
 
@@ -18,14 +18,14 @@ mixin footer(data)
 							li.footer__item 
 								a.footer__link(href = navigation.link title="")!=navigation.title
 
-					a.footer__get-presentation(href = data.presentionLink title="")!=data.presentanionTitle
+					a.footer__get-presentation(href = data.presentantionLink title="")!=data.presentantionTitle
 
 
 				.footer__column
-					.footer__button.button!=data.button
+					a.footer__button.button(href="https://ibs-infinisoft.ru/services/web-development/#b532" target="_blank")!=data.button
 					.footer__text 
 						| Электронная почта:
-						a.footer__link(href= "mailto" + data.email title="")!=data.email
+						a.footer__link(href= "mailto:" + data.email title="")!=data.email
 
 			.footer__bottom 
 				p.footer__copyright!=data.copyright
@@ -34,11 +34,11 @@ mixin footer(data)
 
 				ul.footer__socials 
 					li.footer__item 
-						a.footer__link(href="#" target="_blank" title="vk")
+						a.footer__link(href="https://vk.com/ru_ibs/" target="_blank" title="vk")
 							+icon('vk')
 					li.footer__item 
-						a.footer__link(href="#" target="_blank" title="in")
+						a.footer__link(href="https://www.linkedin.com/company/ibs-company/" target="_blank" title="in")
 							+icon('in')
 					li.footer__item 
-						a.footer__link(href="#" target="_blank" title="ibs.ru")
+						a.footer__link(href="https://ibs.ru/" target="_blank" title="ibs.ru")
 							+icon('ibs')

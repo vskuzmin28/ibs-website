@@ -1,0 +1,82 @@
+// platform
+
+.platform {
+	$p: &;
+	margin-bottom: 60px;
+
+	&__container {
+		margin-top: 30px;
+		padding-top: 30px;
+	}
+
+	&__box {
+		margin-top: 60px;
+		padding: 40px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		border-radius: 10px;
+		border: 1px solid $color-blue;
+		background: $color-white;
+		box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.04);
+	}
+
+	&__content {
+		width: 870px;
+
+		#{$p}__text {
+			margin-bottom: 40px;
+			font-size: 18px;
+			font-family: $poppins-400;
+			line-height: 180%;
+			color: $color-black;
+
+			strong {
+				color: $color-blue;
+			}
+		}
+
+		#{$p}__subtitle {
+			margin-bottom: 20px;
+			font-size: 20px;
+			font-family: $inter-500;
+			color: $color-blue;
+		}
+
+		#{$p}__list {
+			margin-bottom: 30px;
+			list-style: inside;
+
+			#{$p}__item {
+				margin-bottom: 20px;
+				font-size: 18px;
+				font-family: $poppins-400;
+				line-height: 140%;
+				color: $color-black;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+
+	&__link {
+		font-size: 16px;
+		font-family: $inter-500;
+		color: $color-blue;
+		text-decoration: none;
+		transition: $transition-base;
+
+		&:hover {
+			color: $color-black;
+		}
+	}
+
+	&__image {
+		width: 310px;
+		height: auto;
+		object-fit: cover;
+	}
+
+}

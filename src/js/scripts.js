@@ -1,7 +1,7 @@
 $(document).ready(() => {
     svg4everybody()
 
-    $('.header, footer').on("click","a", function (event) {
+    $('.navigation').on("click","a", function (event) {
         event.preventDefault();
         let id  = $(this).attr('href'),
             top = $(id).offset().top - 150;

@@ -1,6 +1,7 @@
 const gulp = require('gulp')
 const script = require('./gulp/tasks/scripts')
 const fonts = require('./gulp/tasks/fonts')
+const pdf = require('./gulp/tasks/pdf')
 const vendors = require('./gulp/tasks/vendorsJS')
 const styles = require('./gulp/tasks/styles')
 const clean = require('./gulp/tasks/clean')
@@ -15,7 +16,7 @@ const images = require('./gulp/tasks/images')
 const pageres = require('./gulp/tasks/screenshot')
 const cleanCover = require('./gulp/tasks/screenshotClean')
 
-const dev = gulp.parallel(pug2html, script, vendors, styles, vendorsCSS, images, spriteSVG, fonts, convertFonts)
+const dev = gulp.parallel(pug2html, script, vendors, styles, vendorsCSS, images, spriteSVG, fonts, convertFonts, pdf)
 
 exports.default = gulp.series(
   clean,
@@ -25,7 +26,9 @@ exports.default = gulp.series(
 
 exports.build = gulp.series(
   clean,
-  serve
+  dev,
+  favicon,
+  injectFav
 )
 
 exports.deploy = gulp.series(

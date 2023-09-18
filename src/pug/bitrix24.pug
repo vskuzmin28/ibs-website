@@ -5,8 +5,6 @@ block variables
 	-let description = 'IBS WEB - команда разработки с фокусом на портальные решения на базе решения 1С-Битрикс24'
 	-let keywords = '1С-Битрик24, Битрикс24, Битрикс, Битра, CRM, Корпоративный, Портал, Bitrix24'
 
-	// https://ibs-infinisoft.ru/services/web-development/#b532
-
 block content
 
 	// BEGIN HEADER
@@ -72,9 +70,9 @@ block content
 	+achievements({
 		title: 'Достижения и награды',
 		items: [
-			{link: '', date: '2023', image: '/assets/images/achievements/hr-brand.png', alt: 'HH HR brand'},
-			{link: '', date: '2022', image: '/assets/images/achievements/riw.png', alt: 'Russian intranet awwards'},
-			{link: '', date: '2020', image: '/assets/images/achievements/lider.png', alt: 'Интранет-лидер года'}
+			{link: 'https://hh.ru/article/31601/', date: '2023', image: '/assets/images/achievements/hr-brand.png', alt: 'HH HR brand'},
+			{link: 'https://abazhur.rivelty.ru/riawards-2023-results/', date: '2022', image: '/assets/images/achievements/riw.png', alt: 'Russian intranet awwards'},
+			{link: 'https://ibs.ru/media/news/korporativnyy-portal-zoom-ibs-finalist-ekspertnoy-premii-russian-intranet-awards/', date: '2020', image: '/assets/images/achievements/lider.png', alt: 'Интранет-лидер года'}
     	]
 	})
 
@@ -130,32 +128,14 @@ block content
 
 	// END POSSIBILITIES
 
-	// BEGIN PROJECTS
+	// BEGIN PLATFORM
 
-	+projects({
-		title: 'Проекты',
-		certificates: [
-			{image: '/assets/images/certificates/certificate-1.png'},
-			{image: '/assets/images/certificates/certificate-2.png'},
-			{image: '/assets/images/certificates/certificate-3.png'},
-			{image: '/assets/images/certificates/certificate-4.png'}
-		],
-		items: [
-			{
-				title: 'Корпоративный портал проектных офисов',
-				text: 'Разработать систему, помогающую информировать пользователей о статусе работы проектных офисов, новостях и лучших практиках',
-				point1: 'Реализованная единая ИС для госслужащих из разных минестерств и ведомств',
-				point2: 'Геймифицированное проектное управление',
-				technology: '1С-Битрикс24: Корпоративный портал',
-				interface: '/assets/images/projects/rfk.png',
-				client: '/assets/images/clients/rfk.png'
-			},
-
-    	],
-
+	+platform({
+		title: 'Направления',
+		product: '/assets/images/platform.png'
 	})
 
-	// END PROJECTS
+	// END PLATFORM
 
 	// BEGIN DIRECTIONS
 
@@ -178,8 +158,8 @@ block content
 	+footer({
 		logo: '/assets/images/logo-white.png',
 		telephones: [
-			{telephone: '+7 (495) 967-80-80'},
-			{telephone: '+7 (914) 195-64-59'}
+			{telephone: '+7 (495) 967-80-80', tel: '+74959678080'},
+			{telephone: '+7 (914) 195-64-59', tel: '+79141956459'}
 		],
 		address: 'Россия, 127434, город Москва, Дмитровское шоссе, дом 9-Б, эт. 5 пом. XIII, ком. 6',
 		navigations: [
@@ -189,9 +169,9 @@ block content
 			{title: 'Возможности', link: '#possibilities'},
 			{title: 'Платформа', link: '#platform'}
 		],
-		presentanionLink: '#',
-		presentanionTitle: 'Скачать презентацию ',
-		persInfoLink: '#',
+		presentantionLink: '/assets/ibs-web.pdf',
+		presentantionTitle: 'Скачать презентацию ',
+		persInfoLink: '/assets/politic.pdf',
 		persInfoTitle: 'Персональные данные и правовые аспекты',
 		button: 'Обсудить проект',
 		email: 'web@ibs.ru',
