@@ -25,23 +25,71 @@ mixin projects(data)
 							img.projects__certificate(src = certificate.image alt="ibs.ru")
 
 				.projects__list
-					.projects__item 
-						each projects in data.items
-							.projects__title!=projects.title
-							.projects__content 
-								.projects__column 
-									.projects__subtitle Задачи проекта
-									.projects__text!=projects.text
+					.projects__slider
+						.swiper-wrapper
+							.swiper-slide.projects__item 
+								.projects__title Корпоративный портал проектных офисов
+								.projects__content 
+									.projects__column 
+										.projects__subtitle Задачи проекта
+										.projects__text
+											| Разработать систему, помогающую информировать пользователей о статусе работы проектных офисов, новостях и лучших практиках
 
-									.projects__subtitle Результаты
-									ul.projects__box
-										li.projects__point!=projects.point1
-										li.projects__point!=projects.point2 
+										.projects__subtitle Результаты
+										ul.projects__box
+											li.projects__point
+												| Реализованная единая ИС для госслужащих из разных минестерств и ведомств
+											li.projects__point
+												| Геймифицированное проектное управление
 
 
-									.projects__subtitle Технология
-									.projects__text!=projects.technology
+										.projects__subtitle Технология
+										.projects__text 1С-Битрикс24: Корпоративный портал
 
-								.projects__images
-									img.projects__interface(src = projects.interface alt="ibs.ru")
-									img.projects__client(src = projects.client alt="ibs.ru")
+									.projects__images
+										img.projects__interface(src="/assets/images/projects/rfk.png" alt="ibs.ru")
+										img.projects__client(src="/assets/images/clients/rfk.png" alt="ibs.ru")
+
+							.swiper-slide.projects__item 
+								.projects__title Корпоративный портал LIFE
+								.projects__content 
+									.projects__column 
+										.projects__subtitle Задачи проекта
+										.projects__text Реализовать единую точка доступа ко всем системам и сервисам компании
+
+										.projects__subtitle Результаты
+										ul.projects__box
+											li.projects__point 
+												| Увеличение вовлеченности сотрудников компании на 25%
+											li.projects__point
+												| Интеграция всех дочерних компаний на портал более 5000 сотрудников
+
+
+										.projects__subtitle Технология
+										.projects__text 1С-Битрикс24: Корпоративный портал
+
+									.projects__images
+										img.projects__interface(src="/assets/images/projects/life.png" alt="ibs.ru")
+										//img.projects__client(src="/assets/images/logo-blue.png" alt="ibs.ru")
+
+							.swiper-slide.projects__item 
+								.projects__title B2B кабинет вагоноремонтного предприятия
+								.projects__content 
+									.projects__column 
+										.projects__subtitle Задачи проекта
+										.projects__text Разработать и ввести в эксплуатацию ИС с учетными системами клиента по ремонту вагонов
+
+										.projects__subtitle Результаты
+										ul.projects__box
+											li.projects__point 
+												| Автоматизация процесса взаимодействия с клиентами
+											li.projects__point
+												| Сокращение времени обслуживания клиента на 40% за счет актуальной информации на портале
+
+
+										.projects__subtitle Технология
+										.projects__text 1С-Битрикс: Управление сайтом
+
+									.projects__images
+										img.projects__interface(src="/assets/images/projects/rts.png" alt="ibs.ru")
+										img.projects__client(src="/assets/images/clients/rts.png" alt="ibs.ru")

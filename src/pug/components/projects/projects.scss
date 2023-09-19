@@ -68,6 +68,7 @@
 		margin-top: 0px;
 		flex-direction: row;
 		flex-wrap: nowrap;
+		width: 977px;
 
 		#{$p}__item {
 			padding: 40px;
@@ -143,9 +144,16 @@
 			bottom: 0;
 			right: 0px;
 			position: absolute;
-			width: 100px;
-			height: 50px;
+			width: 90px;
+			height: auto;
 			object-fit: cover;
 		}
+	}
+
+	&__slider {
+		overflow: hidden;
+		list-style: none;
+		/* Fix of Webkit flickering */
+		z-index: 1;
 	}
 }
