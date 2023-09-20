@@ -2,8 +2,8 @@ extends ../pug/layout/main
 
 block variables
 	-let title = 'IBS - web-разработка'
-	-let description = ''
-	-let keywords = ''
+	-let description = 'IBS WEB - команда разработки с фокусом на портальные решения на базе решения 1С-Битрикс24'
+	-let keywords = '1С-Битрик24, Битрикс24, Битрикс, Битра, CRM, Корпоративный, Портал, Bitrix24'
 
 block content
 
@@ -13,11 +13,11 @@ block content
 		logo: '/assets/images/logo-blue.png',
 		alt: 'ibs.ru',
 		items: [
-			{link: '#services', title: 'Услуги'},
-			{link: '#directions', title: 'Направления'},
-			{link: '#projects', title: 'Проекты'},
-			{link: '#clients', title: 'Клиенты'},
-			{link: '#contacts', title: 'Контакты'},
+			{title: 'Услуги', link: '#services'},
+			{title: 'Направления', link: '#directions'},
+			{title: 'Проекты', link: '#projects'},
+			{title: 'Клиенты', link: '#clients'},
+			{title: 'Контакты', link: '#contacts'},
     	],
 		button: 'Обсудить проект'
 	})
@@ -108,12 +108,12 @@ block content
 	+directions({
 		title: 'Направления',
 		items: [
-			{link: 'https://ibs.ru/industries/government/', logo: '/assets/images/directions/icon-state.png', alt: 'Госсектор', title: 'Госсектор'},
-			{link: 'https://ibs.ru/industries/gas/', logo: '/assets/images/directions/icon-gas.png', alt: 'Газ, нефть', title: 'Газ, нефть'},
-			{link: 'https://ibs.ru/industries/agro/', logo: '/assets/images/directions/icon-agro.png', alt: 'Агросектор', title: 'Агросектор'},
-			{link: 'https://ibs.ru/industries/retail/', logo: '/assets/images/directions/icon-riteil.png', alt: 'Ритейл', title: 'Ритейл'},
-			{link: 'https://ibs.ru/industries/production/', logo: '/assets/images/directions/icon-transport.png', alt: 'Транспорт', title: 'Транспорт'},
-			{link: 'https://ibs.ru/industries/energy/', logo: '/assets/images/directions/icon-energy.png', alt: 'Энергетика', title: 'Энергетика'}
+			{title: 'Государственные программы', link: 'https://ibs.ru/industries/government/', logo: '/assets/images/directions/icon-state.png', alt: 'Государственные программы'},
+			{title: 'Газовая индустрия', link: 'https://ibs.ru/industries/gas/', logo: '/assets/images/directions/icon-gas.png', alt: 'Газовая индустрия'},
+			{title: 'Агропромышленность', link: 'https://ibs.ru/industries/agro/', logo: '/assets/images/directions/icon-agro.png', alt: 'Агро-промышленность'},
+			{title: 'ТНП и Ритейл', link: 'https://ibs.ru/industries/retail/', logo: '/assets/images/directions/icon-riteil.png', alt: 'ТНП и Ритейл'},
+			{title: 'Промышленность и транспорт', link: 'https://ibs.ru/industries/production/', logo: '/assets/images/directions/icon-transport.png', alt: 'Промышленность и транспорт'},
+			{title: 'Энергетика и ЖКХ', link: 'https://ibs.ru/industries/energy/', logo: '/assets/images/directions/icon-energy.png', alt: 'Энергетика и ЖКХ'}
     	]
 	})
 
@@ -138,9 +138,9 @@ block content
 	+achievements({
 		title: 'Достижения и награды',
 		items: [
-			{link: '', date: '2023', image: '/assets/images/achievements/hr-brand.png', alt: 'HH HR brand'},
-			{link: '', date: '2022', image: '/assets/images/achievements/riw.png', alt: 'Russian intranet awwards'},
-			{link: '', date: '2020', image: '/assets/images/achievements/lider.png', alt: 'Интранет-лидер года'}
+			{link: 'https://hh.ru/article/31601/', date: '2023', image: '/assets/images/achievements/hr-brand.png', alt: 'HH HR brand'},
+			{link: 'https://abazhur.rivelty.ru/riawards-2023-results/', date: '2022', image: '/assets/images/achievements/riw.png', alt: 'Russian intranet awwards'},
+			{link: 'https://ibs.ru/media/news/korporativnyy-portal-zoom-ibs-finalist-ekspertnoy-premii-russian-intranet-awards/', date: '2020', image: '/assets/images/achievements/lider.png', alt: 'Интранет-лидер года'}
     	]
 	})
 
@@ -177,8 +177,8 @@ block content
 	+footer({
 		logo: '/assets/images/logo-white.png',
 		telephones: [
-			{telephone: '+7 (495) 967-80-80'},
-			{telephone: '+7 (914) 195-64-59'}
+			{telephone: '+7 (495) 967-80-80', tel: '+74959678080'},
+			{telephone: '+7 (914) 195-64-59', tel: '+79141956459'}
 		],
 		address: 'Россия, 127434, город Москва, Дмитровское шоссе, дом 9-Б, эт. 5 пом. XIII, ком. 6',
 		navigations: [
@@ -189,9 +189,9 @@ block content
 			{title: 'Проекты', link: '#projects'},
 			{title: 'Контакты', link: '#contacts'}
 		],
-		presentanionLink: '#',
-		presentanionTitle: 'Скачать презентацию ',
-		persInfoLink: '#',
+		presentantionLink: '/assets/ibs-web.pdf',
+		presentantionTitle: 'Скачать презентацию ',
+		persInfoLink: '/assets/politic.pdf',
 		persInfoTitle: 'Персональные данные и правовые аспекты',
 		button: 'Обсудить проект',
 		email: 'web@ibs.ru',
