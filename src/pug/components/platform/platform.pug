@@ -13,12 +13,8 @@ mixin platform(data)
 							| Преимущества
 
 						ul.platform__list
-							li.platform__item
-								| Один из самых популярных корпоративных порталов в мире.Используется более чем в 3 миллионах компаний
-							li.platform__item
-								| Корпоративный портал на вашем сервере с вашими индивидуальными настройками, доработками и брендом
-							li.platform__item
-								| Единое решение для совместной работы сотрудников и оптимизации бизнес-процессов компании
+							each platforms in data.items
+								li.platform__item!=platforms.text
 
 						a.platform__link(href="https://www.bitrix24.ru/prices/try_biz.php" target="_blank" title="")
 							| Демо-версия

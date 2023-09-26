@@ -45,7 +45,10 @@
 
 		#{$p}__list {
 			margin-bottom: 30px;
-			list-style: inside;
+			padding-left: 20px;
+			list-style-type: disc;
+			list-style-position: outside;
+			
 
 			#{$p}__item {
 				margin-bottom: 20px;
