@@ -113,7 +113,8 @@
 			margin: 0 0 30px 0;
 			padding-left: 10px;
 			flex-direction: column;
-			list-style: inside;
+			list-style-type: disc;
+			list-style-position: outside;
 
 			#{$p}__point {
 				margin-bottom: 10px;
