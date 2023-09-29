@@ -154,7 +154,6 @@
 	&__slider {
 		overflow: hidden;
 		list-style: none;
-		/* Fix of Webkit flickering */
 		z-index: 1;
 	}
 }

@@ -53,13 +53,14 @@ ol, ul {
 img {
 	max-width: 100%;
 	display: block;
-	transform: translateZ(0);
 }
 
 input,
 button,
 textarea,
-select { font: inherit; }
+select { 
+	font: inherit; 
+}
 
 audio,
 canvas,
@@ -67,15 +68,23 @@ iframe,
 img,
 svg,
 video,
-textarea { vertical-align: middle; }
+textarea { 
+	vertical-align: middle; 
+}
 
-textarea { resize: none; }
+textarea { 
+	resize: none; 
+}
 
-section { position: relative; }
+section { 
+	position: relative; 
+}
 
 input,
 select,
-button { outline: none; }
+button { 
+	outline: none; 
+}
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
